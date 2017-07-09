@@ -1,0 +1,18 @@
+#abgne-block-20120427, #abgne-block-20120427 li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#abgne-block-20120427 {
+	position: relative;
+	top: 100px;
+	left: 100px;
+	width: 650px;	/* (圖片的寬度 +  _margin) * 數量 - _margin */
+	height: 300px;	/* 圖片的高度 */
+}
+#abgne-block-20120427 li {
+	position: absolute;
+}
+#abgne-block-20120427 li a img {
+	border: none;
+}

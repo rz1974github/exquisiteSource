@@ -1,0 +1,87 @@
+/*
+	Miniport by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body,input,textarea,select
+	{
+		font-size: 11pt;
+	}
+
+	header
+	{
+		margin: 0 0 4em 0;
+	}
+	
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+	.wrapper
+	{
+		padding: 5em 0 5em 0;
+		text-align: center;
+	}
+	
+		.wrapper.first
+		{
+			padding-top: 9em;
+		}
+
+		.wrapper.style4 .row-special
+		{
+			margin: 2em 0 0 0;
+			padding: 2em 0 2em 0;
+		}
+
+/*********************************************************************************/
+/* Articles                                                                      */
+/*********************************************************************************/
+
+	#top
+	{
+	}
+
+		#top .image
+		{
+			width: 19.5em;
+			height: 19.5em;
+			margin: 0;
+		}
+		.fr01 {
+	font-size: 1.5em;
+	color: #333;
+}
+.fr02 {
+	font-size: 1.3em;
+	margin-bottom: 1em;
+}
+.fr03 {
+	font-size: 1.3em;
+	-moz-box-shadow: 2px 2px 22px #333;
+	border-radius: 8px;
+	
+}
+
+
+.wra01 {
+	-webkit-appearance: none;
+	display: block;
+	/* [disabled]border: 0; */
+	/*font-size: 1em;*/
+	/* [disabled]border-radius: 8px; */
+	/*border: solid 3px #ddd;*/
+	/*color: #666;*/
+	/* [disabled]box-shadow: inset 0px 2px 3px 1px rgba(0,0,0,0.05), 0px 1px 0px 0px rgba(255,255,255,0.025); */
+	width: 100%;
+	margin-bottom: 1.5em;
+	/*padding: 0.25em;*/
+	/*background-color: #fafafa;
+	background-image: url(images/bg.png);*/
+	
+	}

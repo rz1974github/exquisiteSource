@@ -1,0 +1,53 @@
+		<!-- Contact -->
+		<div class="wrapper style4">
+			<article id="contact" class="container 75%">
+               <!--<div>
+			      <h3>EXQUISITE　精雕細琢</h3>
+               </div>-->
+                  <div class="row">
+                     <div class="12u">
+                        <div class="row">
+                           <div class="12u fr31">元基生技企業有限公司</div>
+                           <div class="12u">
+                              <div class="row">
+                                 <div class="6u">
+                                    <div class="row">
+                                       <div class="12u"><img class="10u" src="images/iconC-6.png"></div>
+                                    </div>
+                                 </div>
+                                 <div class="6u">
+                                    <div class="row">
+                                       <div class="12u"><img class="10u" src="images/iconC-7.png"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="12u">
+                              <div class="row">
+                                 <div class="6u">
+                                    <div class="row">
+                                       <div class="12u">
+                                          <a href="#"><img class="6u 6u(2) 8u(3)" src="images/iconC-8.png"></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="6u">
+                                    <div class="row">
+                                       <div class="12u">
+                                          <a href="#"><img class="6u 6u(2) 8u(3)" src="images/iconC-9.png"></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                       </div>
+                    </div>
+                 </div>
+				<footer>
+					<ul id="copyright">
+						<li>COPYRIGHT &copy; 2014 All rights reserved.</li>
+                        <li>Design:Exquisite Design Cooperation.</li>
+					</ul>
+				</footer>		  
+			</article>
+		</div>

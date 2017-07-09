@@ -1,0 +1,85 @@
+/* CSS Document */
+
+.rzTable
+{
+	border: 1px solid rgba(255, 255, 255, 0.75);
+	margin: 2em 2em 1em 1em;
+}
+
+.rzTable tr
+{
+	border: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+.rzTable th
+{
+	border: 1px solid rgba(255, 255, 255, 0.75);
+	padding-left:1em;
+	padding-right:1em;
+}
+
+.rzTable td
+{
+	border: 1px solid rgba(255, 255, 255, 0.75);
+	padding-left:1em;
+	padding-right:1em;
+}
+
+.rzTableHeader
+{
+	width: 10em;
+}
+
+.rzButton
+{
+	line-height:1.4em !important;
+	padding:0.2em 1.5em 0.2em 1.5em !important;
+	margin:0.2em 1em 0.2em 1em;
+}
+
+.rzButton:disabled
+{
+	color:rgba(102,102,102,1) !important;
+	line-height:1.4em !important;
+	padding:0.2em 1.5em 0.2em 1.5em !important;
+	margin:0.2em 1em 0.2em 1em;
+}
+
+.rzDetailTable
+{
+	margin-bottom:0;
+}
+
+#topnav ul li
+{
+	display:inline-block;
+}
+
+.tab
+{
+	margin-left:2em;
+}
+
+.rzFormInput
+{
+	line-height:1.4em !important;
+	margin:0.2em;
+	padding:0.2em 0.5em 0.2em 0.5em !important;
+	color:rgba(10,10,10,1);
+}
+
+.rzFormInput:disabled
+{
+	color:rgba(102,102,102,1) !important;
+	line-height:1.4em !important;
+	margin:0.2em;
+	padding:0.2em 0.5em 0.2em 0.5em !important;
+	background-color: rgba(255,255,255,0.5) !important;
+}
+
+.rzFormSubmit
+{
+	line-height:1.4em !important;
+	margin:0.2em;
+	padding:0.5em 2em 0.5em 2em !important;
+}

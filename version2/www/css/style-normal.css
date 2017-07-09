@@ -1,0 +1,36 @@
+/*
+	Big Picture by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+body,input,textarea,select {
+	font-size: 15pt;
+}
+.main.style1 h4 {
+	letter-spacing: 7px;
+}
+.main.style1 p
+{
+	letter-spacing: 4px;
+}
+
+.thumbnail {
+	background-color: #999;
+	border-radius: 8px;
+}
+
+
+/*	#two {
+	background-size:cover;
+	background-attachment: fixed;
+	background-position: top right;
+	box-shadow: 1px 1px 1px #CCC;
+	background-color: #FAFAFA;
+	background-image: url(../images/one-100-6-3.jpg);
+	background-repeat: no-repeat;
+	}*/

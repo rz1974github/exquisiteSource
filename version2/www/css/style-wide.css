@@ -1,0 +1,83 @@
+/*
+	Big Picture by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+body,input,textarea,select {
+	font-size: 17pt;
+}
+	
+	/* Main */
+		
+.main {
+}
+.main.style1 h4 {
+	letter-spacing: 7px;
+}
+
+.main.style1 p
+{
+	letter-spacing: 5px;
+}
+
+    /************** main style2  ************/
+.main.style2 {
+}
+			
+.main.style2 .content {
+	width: 40%;
+}
+			
+.main.style2.right .content {
+	left: 50%;
+	background-repeat: no-repeat;
+}
+
+.main.style2.inactive {
+}
+
+.main.style2.inactive .content {
+}
+
+.main.style2.inactive.left .content {
+	/*left: -60%;*/
+}
+
+.main.style2.left .content {
+	left: 20%;
+}
+
+.thumbnail {
+	background-color: #999;
+	border-radius: 8px;
+}
+/*#intro {
+	background-size: cover;
+	background-attachment: fixed, fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	box-shadow: 1px 1px 1px #CCC;
+	background-image: url(../images/P1130285-12-1_1024_768-2.jpg);
+	}*/
+	/*#one {
+	background-size: contain;
+	background-attachment: fixed;
+	background-position: top center;
+	box-shadow: 1px 1px 1px #CCC;
+	background-image: url(../images/0080-2.png); 
+	background-repeat: no-repeat;
+	}
+	#two {
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top center,bottom center;
+	box-shadow: 1px 1px 1px #CCC;
+	background-color: #FAFAFA;
+	background-image: url(../images/one-100-6-3-2.png);
+	background-repeat: no-repeat;
+	}*/

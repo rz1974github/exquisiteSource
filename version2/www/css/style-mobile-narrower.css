@@ -1,0 +1,115 @@
+/*
+	Big Picture by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body,input,textarea,select {
+		font-size: 13pt;
+	}
+
+	/*.container > .container {
+		width: 100% !important;
+	}*/
+	
+	/* Main */
+		
+		.main {
+		}
+		
+		.main.style1 {
+				/*padding: 10em 15px 10em 15px;*/
+			}
+		
+			.main.style2 {
+				/*padding-top: 5em;
+				padding-left:15px;
+				padding-bottom:5em;
+				padding-right:15px;*/
+				/*max-height: 640px;
+				max-width: 800px;*/
+			}
+			
+				.main.style2 .content {
+					width: 60%;
+				}
+			
+					.main.style2.right .content {
+						left: 60%;
+					}
+
+				.main.style2.inactive {
+				}
+
+					.main.style2.inactive .content {
+					}
+
+						.main.style2.inactive.left .content {
+							left: -60%;
+						}
+						
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+	
+	#footer {
+		height: auto;
+		line-height: inherit;
+		text-align: center;
+		padding: 2em 1em 2em 1em;
+	}
+
+		#footer .actions {
+			position: relative;
+			left: 0;
+			top: 0;
+			height: auto;
+			line-height: inherit;
+			margin: 0 0 1em 0;
+		}
+		
+		#footer .menu {
+			position: relative;
+			right: 0;
+			top: 0;
+			height: auto;
+			line-height: inherit;
+		}
+		#intro {
+	background:/* url('images/overlay.png'),*/ url('../images/P1130285-12-1_1024_768.jpg');
+	background-size: cover;
+	background-attachment: fixed, fixed;
+	background-position: top center, bottom center;
+	background-repeat: no-repeat;
+	box-shadow: 1px 1px 1px #CCC;
+	}
+		#one {
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: left top; 
+	box-shadow: 1px 1px 1px #CCC;
+	background-image: url('../images/one-100-3-6.jpg');
+	background-repeat: no-repeat;
+	}
+	#two {
+	background-size: /*768px 512px,*/cover;
+	background-attachment: fixed;
+	background-position: top right/*,bottom right*/;
+	box-shadow: 1px 1px 1px #CCC;
+	background-color: #FAFAFA;
+	background-image: url(../images/one-100-6-3.jpg);
+	background-repeat: no-repeat;
+	}
+	
+	
+	
+	
+	.fr626
+{
+	/*padding-top: 8.5em;
+	padding-bottom: 3em;*/
+}

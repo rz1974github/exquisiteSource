@@ -1,0 +1,400 @@
+
+/*
+	Big Picture by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body {
+	    max-width: 480px;
+	}
+
+	input,textarea,select {
+		font-size: 11pt;
+		line-height: 1.5em;
+	}
+
+	h2 {
+	/* [disabled]font-size: 2.75em; */
+	letter-spacing: -1px;
+	}
+	
+	/* Box */
+
+		.box {
+			padding: 1em;
+		}
+
+			.box.style2 {
+	/* [disabled]background-color: rgba(255,255,255,0.9); */
+	padding-top: 3em;
+	/*padding-right: 3em;*/
+	padding-bottom: 3em;
+	/*padding-left: 3em;*/
+			}
+
+	/* Main */
+
+.main {
+}
+
+.main.style1 {
+	padding: 2em 5px 4em 5px;
+}
+.main.style1 h4 {
+	font-size: 1.2em;
+	line-height: 1em;
+	letter-spacing: 2px;
+	font-weight: normal;
+	color: #333333;
+}
+.main.style1 footer {
+	padding: 0 0 6em 0;
+}
+
+.main.style1 h2 {
+	font-size: 1.8em; 
+	letter-spacing: 1px;
+	margin-bottom: 1em;
+	color: #666666;
+}
+.main.style1 p
+{
+	font-size: 1.2em;
+	letter-spacing: normal;
+	line-height: 1.3em;
+	color: #5E5E5E;	
+}
+
+
+
+.main.style2 {
+	padding: 4em 15px 4em 15px;
+}
+			
+.main.style2 .button.anchored {
+	display: none;
+}
+
+.main.style2 .content {
+	width: 100%;
+	/*left: 0% !important;*/
+	text-align: center;
+}
+
+.main.style2.left .content {
+	width: 120%;
+	left: -10%;
+}
+
+.main.style2.right .content {
+	left: 0%;
+}
+					
+				
+.main.style2 .tmp {
+	width: 100%;
+	height: 10em;
+	background-size: cover;
+}
+/***************************************************/
+.main.style3 {
+	text-align: center;
+	padding: 3em 10px 3em 10px;
+}
+
+.main.style3 .content {
+	width: 100%;
+	left: 0% !important;
+	text-align: center;
+}
+
+.main.style3 h2 {
+	font-size: 1.7em;
+	/*line-height: 1.4em;*/
+	/*font-family: "微軟正黑體";
+	/*padding-top: 0em;
+	padding-bottom: 1em;
+	font-stretch: semi-condensed;*/
+	letter-spacing: 0;
+}
+
+.main.style3 h3 {
+	font-size: 1.3em;
+	letter-spacing: 1px;
+	line-height: 2em;
+	font-weight: 500;
+	/*padding-top: 1em;
+	padding-bottom: 4em;*/
+}
+
+.main.style3 p {
+	font-size: 1.1em;
+}
+
+.main.style3 ul {
+	font-size: 1.1em;
+	text-align: 0px;
+}
+
+.main.style3 .diva-right {
+	padding: 0;
+	text-align: left;
+}
+.main.style3 .diva-left {
+	padding: 0;
+	text-align: left;
+}
+/*************************************/
+.main.style4 {
+	padding: 0 10px 0 10px;
+}
+
+.main.style4 h2 {
+	font-size: 1.7em;
+	letter-spacing: 2px;
+}
+
+.main.style4 .content {
+	padding: 0;
+}
+
+.main.style4 p {
+	font-size: 1.1em;
+}
+/***********************************************/
+.main.style5 {
+	padding: 3em 10px 2em 10px;
+}
+
+.main.style5 .content {
+	padding: 0;
+}
+
+.main.style5 header {
+	margin-left: 3em;
+	padding: 0 0 2em 0;
+}
+
+.main.style5 h2 {
+	font-size: 1.7em;
+	letter-spacing: 2px;
+}
+/*************************************************/
+.main.product {
+	padding: 3em 10px 3em 10px;
+}
+
+.main.product .content {
+	padding: 0;
+}
+
+.main.product h3 {
+	font-size: 1.5em;
+	letter-spacing: 2px;
+}
+
+
+.main.product p {
+	font-size: 1.1em;
+}
+
+.main.product .price {
+	font-size: 1.1em;
+}
+
+.main.product .sort-top {
+	text-align: center;
+	margin-bottom: 1em;
+	padding: 0;
+}
+
+.main.product .sort-down {
+	/*margin-bottom: 1em;*/
+	padding: 0;
+	/*border-bottom: 1px solid #999999;*/
+}
+
+.main.product .middle-left {
+	
+	padding: 0;
+}
+
+.main.product .middle-right {
+	padding: 0;
+}
+
+.main.style6 {
+	padding: 3em 10px 2em 10px;
+}
+
+.main.style6 h2 {
+	font-size: 1.7em;
+	letter-spacing: 2px;
+}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header {
+		height: 2.5em;
+		line-height: 2.5em;
+	}
+
+	body {
+		padding-top: 2.5em;
+	}
+
+	#logo {
+		text-align: center;
+		position: relative;
+		left: 0;
+		top: 0;
+		height: 2.5em;
+		line-height: 2.5em;
+	}
+	
+		#logo a {
+			font-size: 1em;
+		}
+	
+	#nav {
+		display: none;
+	}
+	h2 {
+	font-size: 1.5em;
+	font-weight: 200;
+	/*letter-spacing: 5px;*/
+	line-height: 1.25em;
+	
+	}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+	
+	#footer {
+	}
+		
+		#footer .menu {
+		}
+		
+			#footer .menu li {
+				border-left: 0;
+				padding: 1em 0 0 0;
+				margin: 0;
+				display: block;
+			}
+			
+				#footer .menu li:first-child {
+					padding-top: 0;
+				}
+				
+				#footer .menu li a {
+					line-height: 1.5em;
+				}
+				
+/*********************************************************************************/
+/* Poptrox                                                                       */
+/*********************************************************************************/
+
+.poptrox-popup {
+	}
+	
+.poptrox-popup .nav-next,
+.poptrox-popup .nav-previous {
+		}
+
+.poptrox-popup .nav-next:before,
+.poptrox-popup .nav-previous:before {
+				width: 48px;
+				height: 32px;
+				background-size: contain;
+				margin: -16px 0 0 0;
+			}
+			
+.poptrox-popup .closer {
+		}
+		
+.poptrox-popup .closer:before {
+				right: 12px;
+				top: 12px;
+				width: 20px;
+				height: 20px;
+				box-shadow: inset 0 0 0 1px #fff;
+				background-size: contain;
+				opacity: 0.65;
+			}
+/**********************************************************************/
+/*                                                                    */
+/**********************************************************************/
+#abgne-block-20120427,
+#abgne-block-20120427 li {
+	list-style: none;
+	margin: 0;
+	padding: 1em;
+}
+#abgne-block-20120427 {
+	position: relative;
+	top: 100px;
+	
+	/*left: 100px;*/
+	width: 650px;	/* (圖片的寬度 +  _margin) * 數量 - _margin */
+	height: 180px;	/* 圖片的高度 */
+}
+#abgne-block-20120427 li {
+	position: absolute;
+}
+#abgne-block-20120427 li a img {
+	border: none;
+}
+.fr501
+{
+	text-align: center;
+}
+.magic02
+{
+	padding-right: 2em;
+	padding-left: 2em;
+	padding-top: 2em;
+	padding-bottom: 8em;
+}
+.fr03
+{
+	font-size: 100%;
+}
+/*.fr626
+{
+	padding-top: 5em;
+	padding-bottom: 4em;
+}*/
+#intro {
+	background: /*url('images/overlay.png'),*/ url('../images/exquisite_bgimge_750_600_w.jpg');
+	background-size: cover;
+	background-attachment: fixed, fixed;
+	background-position: top center;
+	background-repeat: /*repeat,*/ no-repeat;
+	box-shadow: 1px 1px 1px #ffffff;
+	}
+		#one {
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top center;
+	background-image: url(../images/0080-2_mobile.png);
+	background-repeat: no-repeat;
+	box-shadow: 1px 1px 1px #ffffff;
+	}
+	#two {
+	background-size: /*768px 512px,*/cover;
+	background-attachment: fixed;
+	background-position: top center/*,bottom right*/;
+	background-color: #FAFAFA;
+	background-image: url(../images/one-100-6-3-2.png);
+	background-repeat: no-repeat;
+	box-shadow: 1px 1px 1px #ffffff;
+	}

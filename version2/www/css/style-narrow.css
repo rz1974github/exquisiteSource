@@ -1,0 +1,213 @@
+/*
+	Big Picture by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+body{
+	/*font-size: 80%*/
+}
+
+	body,input,textarea,select {
+		font-size: 12pt;
+	}
+	
+	/* Main */
+		
+.main {
+		}
+		
+.main.style1 {
+   /* padding: 4em 15px 4em 15px;*/
+}
+
+/*.main.style1 .caption {
+	padding: em 0 em 0;
+}*/
+
+/*.main.style1 .article {
+	padding: em 15% em 15%;
+}*/
+
+/*.main.style1 h2 {
+	font-size: 2.25em;
+	line-height: 1em;
+	letter-spacing: -4px;
+	font-weight: normal;
+}*/
+
+.main.style1 h4 {
+	letter-spacing: 4.5px;
+}
+
+.main.style1 footer {
+	padding: 0 0 15em 0;
+}
+
+/*.main.style1 p{
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	line-height: 1.5em;
+	color: #787878;	
+	font-family: "華康中圓體";
+	/*font-weight: 200;*/
+	/*text-shadow: 4px 4px 6px #FFFFFF;
+}*/
+		
+		
+.main.style2 {
+				
+}
+	
+.main.style2 .content {
+	width: 45%;
+}
+.main.style2.left .content {
+	width: 60%;
+}
+			
+.main.style2.right .content {
+	left: 55%;
+}
+
+.main.style2.inactive {
+}
+
+.main.style2.inactive .content {
+}
+
+.main.style2.inactive.left .content {
+	left: -50%;
+}
+
+
+
+.main.style3 .content {
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+
+.main.style3 h3 {
+	font-size: 2em;
+	letter-spacing: 1px;
+	line-height: 2em;
+	/*padding-top: 1em;
+	padding-bottom: 4em;*/
+}
+
+.main.style3 p {
+	font-size: 1.3em;
+}
+
+.main.style3 ul {
+	font-size: 1.3em;
+}
+
+.main.style4 h3 {
+	font-size: 2em;
+	letter-spacing: 1px;
+	line-height: 2em;
+	/*padding-top: 1em;
+	padding-bottom: 4em;*/
+}
+
+.main.style4 p {
+	font-size: 1.3em;
+}
+
+.main.product h3 {
+	font-size: 2em;
+	letter-spacing: 1px;
+	line-height: 2em;
+	/*padding-top: 1em;
+	padding-bottom: 4em;*/
+}
+
+.main.product p {
+	font-size: 1.3em;
+}
+
+.main.product h4 {
+	font-size: 1.3em;
+}
+
+.main.product .middle-right {
+	padding: 8em 1em 12em 1em;
+	border-left: 1px solid #999999;
+	text-align: left;
+}
+
+.main.product .price {
+	font-size: 1.3em;
+	color: #349CA1;
+	margin-bottom: 0.25em;
+	
+}
+
+#intro {
+	background: url('../images/exquisite_bgimge_1280_800.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top center;
+	background-repeat: no-repeat;
+	box-shadow: 1px 1px 1px #CCC;
+	}
+#one {
+	background-size: contain;
+	background-attachment: fixed;
+	background-position: top,center;
+	box-shadow: 1px 1px 1px #CCC;
+	background-image: url('../images/0080_narrow_1040_800.png');
+	background-repeat: no-repeat;
+	}
+#two {
+	background-size: /*768px 512px,*/cover;
+	background-attachment: fixed;
+	background-position: top right/*,bottom right*/;
+	box-shadow: 1px 1px 1px #CCC;
+	background-color: #FAFAFA;
+	/*background-image: url(../images/one-100-6-3.jpg);*/
+	background-repeat: no-repeat;
+	}
+	
+	
+	
+	
+		.fr626
+{
+	/*padding-top: 8.5em;
+	padding-bottom: 3em;*/
+}
+
+.bg101 {
+	background-color: #6F6F6F;
+	border: 0;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 1.3em;
+	cursor: pointer;
+	display: inline-block;
+	height: 1.75em;
+	line-height: 1.75em;
+	outline: 0;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 10px;
+	padding-top: 0px;
+}

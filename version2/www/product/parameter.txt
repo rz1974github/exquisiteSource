@@ -1,0 +1,56 @@
+檔案表
+
+參數表
+
+
+(單價1 x 商品數1) + (單價2 x 商品數2) + ... = 商品總金額
+
+本次新增點數 = 商品總金額 * 0.05
+
+(商品總金額 - 累積點數)x 訂單折扣 = 折扣後商品總金額
+
+折扣後商品總金額 <  免運下限 ==> 要運費
+折扣後商品總金額 >= 免運下限 ==> 不用運費
+
+總金額 = 折扣後商品總金額 + 運費
+
+總商品數
+$_SESSION['total_count']
+
+商品總金額
+$_SESSION['merchantTotal']
+
+本次新增點數
+$_SESSION['newPoints']
+
+折扣後商品總金額
+$_SESSION['discount_merchant']
+
+免運下限
+$_SESSION['noFeeAmount']
+
+使用點數
+$_SESSION['pointsToUse']
+
+剩餘點數
+$_SESSION['remainPoints']==>取消
+
+總金額
+$_SESSION['total_money']
+
+訂單折扣
+$_SESSION['order_discount']
+
+運費
+$_SESSION['shippingFee']
+
+會員點數
+$_SESSION['member_points']
+
+運送種類
+$_SESSION['deliever'] 1=宅配 3.超商店配
+
+付款方式
+$_SESSION['order_type'] 1=貨到付款 3.ATM付款 10.信用卡線上刷卡
+
+$_SESSION['delieverTime'] 1=不指定時間 2.中午以前 3.12~17時 4.17~20時
