@@ -101,6 +101,56 @@
 
             oForm.submit();
         }
+        var selectionChangedB = function() {
+            var sum = 0;
+            var oSlot0 = document.getElementById("id_slot0B");
+            if (oSlot0.value != "0") {
+                sum += getPrice(oSlot0.value);
+            } //if
+            var oSlot1 = document.getElementById("id_slot1B");
+            if (oSlot1.value != "0") {
+                sum += getPrice(oSlot1.value);
+            } //if
+            var oSlot2 = document.getElementById("id_slot2B");
+            if (oSlot2.value != "0") {
+                sum += getPrice(oSlot2.value);
+            } //if
+            var oSlot3 = document.getElementById("id_slot3B");
+            if (oSlot3.value != "0") {
+                sum += getPrice(oSlot3.value);
+            } //if
+
+            var oTotal = document.getElementById("id_set_totalB");
+            oTotal.innerHTML = sum;
+        }
+
+        var submitFormB = function(event) {
+            event.preventDefault();
+
+            var oForm = document.getElementById("orderFormB");
+            var oSlot0 = document.getElementById("id_slot0B");
+            if (oSlot0.value == "0") {
+                alert("請選擇第一項商品");
+                return;
+            } //if
+            var oSlot1 = document.getElementById("id_slot1B");
+            if (oSlot1.value == "0") {
+                alert("請選擇第二項商品");
+                return;
+            } //if
+            var oSlot2 = document.getElementById("id_slot2B");
+            if (oSlot2.value == "0") {
+                alert("請選擇第三項商品");
+                return;
+            } //if
+            var oSlot3 = document.getElementById("id_slot3B");
+            if (oSlot3.value == "0") {
+                alert("請選擇第四項商品");
+                return;
+            } //if
+
+            oForm.submit();
+        }
     </script>
     <noscript>
 			<link rel="stylesheet" href="css/skel.css" />
@@ -313,12 +363,12 @@
                 </div>
                 <div class="12u fr403 fr331">
                     <h3>請選擇組合內容(4入可複選)</h3>
-                    <form action="<?php echo $_SERVER[PHP_SELF]; ?>" method="post" id="orderForm">
+                    <form action="<?php echo $_SERVER[PHP_SELF]; ?>" method="post" id="orderFormB">
                         <div class="row no-collapse fr403">
                             <div class="12u" id="options">
                                 <ul>
                                     <li>
-                                        <select class="12u" name="slot[0]" id="id_slot0" onChange="selectionChanged()">
+                                        <select class="12u" name="slot[0]" id="id_slot0B" onChange="selectionChangedB()">
                                       <option value="0">--請選擇--</option>
                                       <option value="gardenia100">梔子花100g</option>
                                       <option value="rose100">玫瑰花100g</option>
@@ -332,7 +382,7 @@
                                   </select>
                                     </li>
                                     <li>
-                                        <select class="12u" name="slot[1]" id="id_slot1" onChange="selectionChanged()">
+                                        <select class="12u" name="slot[1]" id="id_slot1B" onChange="selectionChangedB()">
                                       <option value="0">--請選擇--</option>
                                       <option value="gardenia100">梔子花100g</option>
                                       <option value="rose100">玫瑰花100g</option>
@@ -346,7 +396,7 @@
                                    </select>
                                     </li>
                                     <li>
-                                        <select class="12u" name="slot[2]" id="id_slot2" onChange="selectionChanged()">
+                                        <select class="12u" name="slot[2]" id="id_slot2B" onChange="selectionChangedB()">
                                       <option value="0">--請選擇--</option>
                                       <option value="gardenia100">梔子花100g</option>
                                       <option value="rose100">玫瑰花100g</option>
@@ -360,7 +410,7 @@
                                    </select>
                                     </li>
                                     <li>
-                                        <select class="12u" name="slot[3]" id="id_slot3" onChange="selectionChanged()">
+                                        <select class="12u" name="slot[3]" id="id_slot3B" onChange="selectionChangedB()">
                                       <option value="0">--請選擇--</option>
                                       <option value="gardenia100">梔子花100g</option>
                                       <option value="rose100">玫瑰花100g</option>
@@ -378,8 +428,8 @@
                         </div>
                         <div class="row" id="combination">
                             <div class="12u">
-                                <p class="price">小計金額　TWD NT$ <span id="id_set_total">0</span></p>
-                                <input class="4u 6u(3) button2" type="button" value="加入購物車" href="Cart.php" onClick="submitForm(event)" />
+                                <p class="price">小計金額　TWD NT$ <span id="id_set_totalB">0</span></p>
+                                <input class="4u 6u(3) button2" type="button" value="加入購物車" href="Cart.php" onClick="submitFormB(event)" />
                             </div>
                             <p class="oder4price">貼心提醒：由於商品每批限量製作，因此顏色將會有些許誤差，為正常範圍。</p>
                         </div>
