@@ -1,0 +1,437 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+	<!-- TemplateBeginEditable name="doctitle" -->
+	<title>EXQUISITE 產品介紹</title>
+	<!-- TemplateEndEditable -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+	<script src="../www/product/js/jquery.min.js"></script>
+	<script src="../www/product/js/jquery.scrolly.min.js"></script>
+	<script src="../www/product/js/skel.min.js"></script>
+	<script src="../www/product/js/init.js"></script>
+	<!-- TemplateBeginEditable name="head" -->
+	<!-- TemplateEndEditable -->
+	<!-- TemplateParam name="11" type="text" value="" -->
+	<noscript>
+			<link rel="stylesheet" href="../www/product/css/skel.css" />
+			<link rel="stylesheet" href="../www/product/css/style.css" />
+			<link rel="stylesheet" href="../www/product/css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Top</a></li>
+					<li><a href="#surce">Surce</a></li>
+					<li><a href="#related">Related</a></li>
+                    <li><a href="#products">Products</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<div class="wrapper style1 first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="4u">
+							<span class="image fit"><img src="../www/product/images/pic00-1-1.jpg" alt="" /></span>
+						</div>
+						<div class="8u">
+							<header>
+								<h1>梔子花 25/100 g</h1>
+							</header>
+							<p><b>您不可不知道的深層清潔神器.　簡單搓揉出滿滿超細緻泡沫 <br>
+綿密感受獨家還原您滑嫩的美肌　創造美膚搶購風潮．</b><br>
+                          絕佳的深層清潔功能,利用物理吸附原理潔淨因子NSP與天然植物萃取精油及產生真實的透明度,讓純淨更無負擔.<br>
+<font size="+1">全員 １００ｇ／２５ｇ　可供選擇</font></p>
+							<a href="#surce" class="button big scrolly">往下瞭解更多</a>
+						</div>
+					</div>
+				</article>
+			</div>
+
+		<!-- Work -->
+			<div class="wrapper style2">
+				<article id="surce">
+					<header>
+						<h2>這裡包括相關的原料和製程</h2>
+						<p>從嚴選天然原料與潔淨因子-NSP<br>
+從形成最佳配方到完美手工製作完成　都是用心的成果</p>
+					</header>                   
+					  <div class="container">
+						<div class="row">
+							<div class="4u">
+								<section class="box style1">
+									<span class="icon featured fa-leaf"></span>
+									   <h3>原料嚴選</h3>
+									   <p>全系列採用:
+進口天然純淨油脂<br> 棕櫚油 棕仁油 椰子油 蓖麻油 酪梨油<br>完整保留潔淨因子-NSP的物裡吸附力<br>
+形成最佳完美組合.<br>
+</p>
+								</section>
+						    </div>
+					        <div class="4u">
+								<section class="box style1">
+								    <span class="icon featured fa-gears"></span>
+									   <h3>手工製程</h3>
+									   <p>堅持60天手工製程<br>
+100% 高分子技術與一甲子製皂師傅經驗<br>
+完成奶油般的細緻泡沫<br>
+加壓工法延展耐用度.</p>
+								</section>
+						    </div>
+						    <div class="4u">
+								<section class="box style1">
+									<span class="icon featured fa-eyedropper"></span>
+									<h3>功能添加</h3>
+									<p>獨家蒙托土萃取高分子 潔淨因子-NSP<br>
+                                    
+100%頂級植物萃取精油<br>
+芬多精自然散發如親臨大自然<br>
+<br>
+</p>
+								</section>
+							</div>
+                            
+                            
+                            							<!--<div class="4u">
+								<section class="box style1">
+                                <div class="PudtImg"><img src="images/pic00-3.jpg"/></div>
+									<!--<span class="icon featured fa-thumbs-o-up"></span>
+									<h3>功能添加</h3>
+									<p>各式頂級植物萃取香氛精油,</p>
+								</section>
+							</div>
+                            <div class="4u">
+								<section class="box style1">
+                                <div class="PudtImg"><img src="images/pic00-3.jpg"/></div>
+									<!--<span class="icon featured fa-thumbs-o-up"></span>
+									<h3>功能添加</h3>
+									<p>各式頂級植物萃取香氛精油,</p>
+								</section>
+							</div>
+                            <div class="4u">
+								<section class="box style1">
+                             <div class="PudtImg"><img src="images/pic00-2.jpg"/></div>   
+									<!--<span class="icon featured fa-thumbs-o-up"></span>
+									<h3>功能添加</h3>
+									<p>各式頂級植物萃取香氛精油,</p>
+								</section>
+							</div>-->
+                          </div>
+					   </div>
+					<footer>
+						<!--<p>看看深層清潔可以選擇的商品</p>-->
+						<a href="#product" class="button big scrolly">瀏覽商品</a>
+					</footer>
+				</article>
+			</div>
+            <div class="wrapper style5">
+				<article class="container" id="product">
+					<div class="row">
+						<div class="4u">
+							<span class="image fit"><img src="../www/product/images/pic00-8.jpg" alt="" /></span>
+						</div>
+						<div class="8u">
+							<header>
+								<h1>梔子花 100g</h1>
+							</header>
+                            
+                            <!--<h3>獨家研究專屬配方　無合成香料　全系列進口天然油脂 </h3>-->
+                              <ul>
+                                 <li>皂身尺寸：　直徑：65mm　厚度：22mm 　重量：100g</li>
+                                 <li>油脂成份：　棕櫚油　棕仁油　椰子油　蓖麻油　甘油</li>
+                                 <li>特殊添加：　潔淨因子NSP　天然萃取植物精油(梔子花)</li>                                 
+                                 <li>適用膚質：　全膚質適用</li>
+                                 <li>使用方法：　塗抹泡沫至肌膚，無須過度搓洗 物理吸附力產生作用，沖淨即可完成深層潔淨</li>
+                                 <li>溫馨提醒：　物理吸附力作用時較敏感者有稍微吸附感(非皮膚刺激)</li>
+                            </ul>
+                            <h3>售價 NT. 280 元</h3>
+                            <a href="#surce" class="button big scrolly">加入購買選單</a>
+                            <ul>
+                                 
+                            </ul>
+                                           
+							
+                           
+						</div>
+					</div>
+				</article>
+			</div>
+            <!--<div class="wrapper style3">
+				<article id="related">
+					<header>
+						<h2>有關於奈米矽皂的更多種類</h2>
+						<p>在這裡你可以看到更多喜歡的香氛選擇. 沒錯,全都是100%純天然植物萃取香氛</p>
+					</header>
+					<div class="container">
+						<div class="row">
+                          <div class="4u">
+								<article class="box2 style2">
+									<a href="#" class="image featured"><img src="images/pic01-2.jpg" alt="" /></a>
+									<h3>梔子花 100g</h3>
+									<p>極淡雅梔子花香 沖淡隨身所沾染的油膩感</p>
+								</article>
+							</div>
+                            <div class="4u">
+								<article class="box2 style2">
+									<a href="#" class="image featured"><img src="images/pic02-2.jpg" alt="" /></a>
+									<h3>梔子花 25g</h3>
+									<p>高貴優雅的玫瑰花香 伴隨浪漫氣息</p>
+								</article>
+							</div>
+                            <div class="4u">
+								<article class="box2 style2">
+									<a href="#" class="image featured"><img src="images/pic03-1.jpg" alt="" /></a>
+									<h3>玫瑰花 100/25g</h3>
+									<p>高貴優雅的玫瑰花香 伴隨浪漫氣息</p>
+								</article>
+							</div>
+                            <div class="4u">
+								<article class="box2 style2">
+									<a href="#" class="image featured"><img src="images/pic04-1.jpg" alt="" /></a>
+									<h3>玉蘭花 100/25g</h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div> 
+                            <div class="4u">
+								<article class="box2 style2">
+									<a href="#" class="image featured"><img src="images/pic05-1.jpg" alt="" /></a>
+									<h3>薰衣草 100/25g</h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div> 
+                            <div class="4u">
+								<article class="box2 style2">
+									<a href="#" class="image featured"><img src="images/pic01-2.jpg" alt="" /></a>
+									<h3>香茅草 100/25g</h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div> 
+                        </div>
+					</div>-->
+					<!--<footer>
+						<p>還想看看其他關於深層清潔又可以做到保養的商品嗎?</p>
+						<a href="#products" class="button big scrolly">See some of my recent products</a>
+					</footer>
+                   
+				</article>
+			</div>-->
+            <div class="wrapper style5">
+             <article class="container" id="product">
+					<div class="row">
+						<div class="4u">
+							<span class="image fit"><img src="../www/product/images/pic01-8.jpg" alt="" /></span>
+						</div>
+						<div class="8u">
+							<header>
+								<h1>梔子花 25g</h1>
+							</header>
+                            <!--<h3>獨家研究專屬配方　無合成香料　全系列進口天然油脂 </h3>-->
+                            <ul>
+                                 <li>皂身尺寸：　直徑：52mm　厚度： 8mm 　重量： 25g</li>
+                                 <li>油脂成份：　棕櫚油　棕仁油　椰子油　蓖麻油　甘油</li>
+                                 <li>特殊添加：　潔淨因子NSP　天然萃取植物精油(梔子花)</li>
+                                 <li>適用膚質：　全膚質適用</li>
+                                 <li>使用方法：　塗抹泡沫至肌膚，無須過度搓洗 物理吸附力產生作用，沖淨即可完成深層潔淨</li>
+                                 <li>溫馨提醒：　物理吸附力作用時較敏感者有稍微吸附感(非皮膚刺激)</li>
+                           </ul>
+                           <h3>售價 NT. 80 元</h3>
+							<a href="#surce" class="button big scrolly">加入購買選單</a>
+						</div>
+					</div>
+                 </article>
+             </div>
+			
+		<!-- Portfolio -->
+			<div class="wrapper style3">
+				<article id="products">
+					<header>
+						<h2>我們所提供的交易服務項目</h2>
+						<p>除了線上訂購外我們也提供電話或傳真團購服務<br>
+請點選並詳閱有關於訂購與寄貨的說明細節</p>
+					</header>
+                    <div class="container">
+						<div class="row">
+							<div class="3u">
+								<section class="box style2">
+									<span class="icon featured fa-phone"></span>
+									   <a href="#"><h3>電話訂購</h3></a>
+                                       <a href="#"><h3>傳真訂購</h3></a>
+									   <p></p>
+								</section>
+						    </div>
+					        <div class="3u">
+								<section class="box style2">
+								    <span class="icon featured fa-credit-card "></span>
+									   <a href="#"><h3>ATM轉帳</h3></a>
+                                       <a href="#"><h3>貨到付款</h3></a>
+									   <p></p>
+								</section>
+						    </div>
+						    <div class="3u">
+								<section class="box style2">
+									<span class="icon featured fa-gift"></span>
+									<a href="#"><h3>超商取貨</h3></a>
+                                    <a href="#"><h3>宅配到府</h3></a>
+									<p></p>
+								</section>
+							</div>
+                            
+					<!--<div class="container">
+						<div class="row">
+							<div class="4u">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic07-1.jpg" alt="" /></a>
+									<h3><a href="CollagenSoap.html">膠原矽皂</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic08-1.jpg" alt="" /></a>
+									<h3><a href="EggSoap.html">蛋殼矽皂</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic09-2.jpg" alt="" /></a>
+									<h3><a href="PearlSoap.html">珍珠矽皂</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+						</div>
+						<div class="row">
+							<div class="4u">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic10-1.jpg" alt="" /></a>
+									<h3><a href="#">檜木矽皂</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic11-1.jpg" alt="" /></a>
+									<h3><a href="#">電氣石皂</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic11-1.jpg" alt="" /></a>
+									<h3><a href="#">周邊相關商品</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+						</div>-->
+					</div>
+                    </div>
+					<footer>
+						<p>想看看其他的商品還是直接去結帳?</p>
+                        <div class="container">
+                      <div class="row">
+							<div class="3u">
+                              <a href="#contact" class="button big scrolly">看其他商品</a></div>
+                        <div class="3u">
+                        <a href="#contact" class="button big scrolly">我想去結帳</a>
+                        </div>
+                        </div>
+                        
+					</footer>
+                    
+			  </article>
+			</div>
+
+		<!-- Contact -->
+			<div class="wrapper style4">
+				<article id="contact" class="container 75%">
+					<!--<header>
+						<h2>Have me make stuff for you.</h2>
+						<p>Ornare nulla proin odio consequat sapien vestibulum ipsum sed lorem.</p>
+					</header>-->
+					<div>
+						<!--<div class="row">
+							<div class="12u">
+								<form method="post" action="#">
+									<div>
+										<div class="row">
+											<div class="6u">
+												<input type="text" name="name" id="name" placeholder="Name" />
+											</div>
+											<div class="6u">
+												<input type="text" name="email" id="email" placeholder="Email" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<input type="text" name="subject" id="subject" placeholder="Subject" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<textarea name="message" id="message" placeholder="Message"></textarea>
+											</div>
+										</div>
+										<div class="row 200%">
+											<div class="12u">
+												<ul class="actions">
+													<li><input type="submit" value="Send Message" /></li>
+													<li><input type="reset" value="Clear Form" class="alt" /></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>-->
+						<div class="row">
+							<div class="12u">
+								<!--<hr />
+								<h3>Find me on ...</h3>
+								<ul class="social">
+									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+									<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+									<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+									<!--
+									<li><a href="#" class="icon fa-rss"><span>RSS</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span>Instagram</span></a></li>
+									<li><a href="#" class="icon fa-foursquare"><span>Foursquare</span></a></li>
+									<li><a href="#" class="icon fa-skype"><span>Skype</span></a></li>
+									<li><a href="#" class="icon fa-soundcloud"><span>Soundcloud</span></a></li>
+									<li><a href="#" class="icon fa-youtube"><span>YouTube</span></a></li>
+									<li><a href="#" class="icon fa-blogger"><span>Blogger</span></a></li>
+									<li><a href="#" class="icon fa-flickr"><span>Flickr</span></a></li>
+									<li><a href="#" class="icon fa-vimeo"><span>Vimeo</span></a></li>
+									
+								</ul>
+								<hr />-->
+							</div>
+						</div>
+					</div>
+					<footer>
+						<ul id="copyright">
+							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="#"></a></li>
+						</ul>
+					</footer>
+				</article>
+			</div>
+
+	</body>
+</html>

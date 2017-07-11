@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="index.php" server="210.242.72.238" local="130854245746005368" remote="130854246000000000" Dst="0" />
-<file name="LICENSE.txt" server="210.242.72.238" local="130784829400000000" remote="130791739800000000" Dst="0" />
-<file name="README.txt" server="210.242.72.238" local="130784829400000000" remote="130791739800000000" Dst="0" />
-<file name="memberMode.php" server="210.242.72.238" local="130854246219961946" remote="130854246000000000" Dst="0" />
+<file name="index.php" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
+<file name="LICENSE.txt" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
+<file name="README.txt" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
+<file name="memberMode.php" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
 <file name="monthMode.php" server="210.242.72.238" local="130848991346620012" remote="130848991200000000" Dst="0" />
-<file name="orderMode.php" server="210.242.72.238" local="130848998077359473" remote="130848998400000000" Dst="0" />
-<file name="markOrder.php" server="210.242.72.238" local="130847394912459637" remote="130847395800000000" Dst="0" />
-<file name="creditMode.php" server="210.242.72.238" local="130861124644377200" remote="130861128600000000" Dst="0" />
-<file name="memberListMode.php" server="210.242.72.238" local="130849054024015269" remote="130849053600000000" Dst="0" />
-<file name="cashout.php" server="210.242.72.238" local="130847394913770809" remote="130847395800000000" Dst="0" />
-<file name="dealerCashout.php" server="210.242.72.238" local="130847366076213879" remote="130847365800000000" Dst="0" />
-<file name="pointTransMode.php" server="210.242.72.238" local="130847892951814625" remote="130847892600000000" Dst="0" />
-<file name="transDealer.php" server="210.242.72.238" local="130847447811860430" remote="130847447400000000" Dst="0" />
-<file name="changeDealer.php" server="210.242.72.238" local="130847474817813256" remote="130847475600000000" Dst="0" />
-<file name="reassignDealer.php" server="210.242.72.238" local="130849002649930034" remote="130849002600000000" Dst="0" />
-<file name="modifyMember.php" server="210.242.72.238" local="130854244788503653" remote="130854246000000000" Dst="0" />
-<file name="modifyMemberForm.php" server="210.242.72.238" local="130854249331882686" remote="130854249000000000" Dst="0" />
-<file name="changePassword.php" server="210.242.72.238" local="130854245006890197" remote="130854246000000000" Dst="0" />
-<file name="changePasswordForm.php" server="210.242.72.238" local="130854251247617268" remote="130854250800000000" Dst="0" />
-<file name="changeMemberSetting.php" server="210.242.72.238" local="130847454000000000" remote="130847454000000000" Dst="0" />
+<file name="orderMode.php" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
+<file name="markOrder.php" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
+<file name="creditMode.php" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
+<file name="memberListMode.php" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
+<file name="cashout.php" server="210.242.72.238" local="131334450600000000" remote="131334450600000000" Dst="0" />
+<file name="dealerCashout.php" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
+<file name="pointTransMode.php" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
+<file name="transDealer.php" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
+<file name="changeDealer.php" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
+<file name="reassignDealer.php" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
+<file name="modifyMember.php" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
+<file name="modifyMemberForm.php" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
+<file name="changePassword.php" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
+<file name="changePasswordForm.php" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
+<file name="changeMemberSetting.php" server="210.242.72.238" local="131334450000000000" remote="131334450000000000" Dst="0" />
 </dwsync>

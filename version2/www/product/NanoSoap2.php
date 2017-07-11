@@ -118,7 +118,7 @@
                        <div class="row 25% fr42">
                       <ul class="12u item">
                          <li><h3>Nano Soap -</h3></li>
-                         <li><h3>Natural essential oils 100g</h3></li>
+                         <li><h3>Natural essential oils 25g</h3></li>
                       </ul>
                       <ul class="12u item">
                          <li><h4>奈米矽皂-天然精油系列</h4></li>

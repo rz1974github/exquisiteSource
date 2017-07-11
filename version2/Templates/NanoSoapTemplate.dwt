@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+	<!-- TemplateBeginEditable name="doctitle" --> 
+
+	<title>EXQUISITE 產品介紹</title>
+	<!-- TemplateEndEditable -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+	<script src="../www/product/js/jquery.min.js"></script>
+	<script src="../www/product/js/jquery.scrolly.min.js"></script>
+	<script src="../www/product/js/skel.min.js"></script>
+	<script src="../www/product/js/init.js"></script>
+	<!-- TemplateBeginEditable name="head" -->
+	<!-- TemplateEndEditable -->
+	
+	<noscript>
+			<link rel="stylesheet" href="../www/product/css/skel.css" />
+			<link rel="stylesheet" href="../www/product/css/style.css" />
+			<link rel="stylesheet" href="../www/product/css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body>
+    <?php include_once("analyticstracking.php") ?>
+	<!-- Nav -->
+		<nav id="nav">
+			<ul class="container">
+				<li class="3u"><h3><a href="../www/index_new.html">EXQUISITE</a></h3></li>				
+                <li><a href="Cart.php">我的購物車<?php 
+                session_start();
+                echo ($_SESSION['total_count']>0) ?  "(".$_SESSION['total_count'].")" : ""; ?></a></li>
+			</ul>
+		</nav>
+	<!-- Home -->
+		<!-- TemplateBeginEditable name="editDetail" -->
+        <div class="wrapper style1 first">
+          <article class="container" id="top">
+            <div class="row">
+              <div class="4u 6u(2) 12u(3)"><img class="12u" src="../www/product/images/pic00-1-1.jpg" alt="" /></div>
+              <div class="8u 10u(2) 12u(3)">
+                <header>
+                  <h1>梔子花 25/100 g</h1>
+                </header>
+                <div class="row 12u(2) fr01">
+                  <div class="6u">您不可不知道的深層清潔神器。</div>
+                  <div class="6u">簡單搓揉出滿滿超細緻泡沫</div>
+                </div>
+                <div class="row 12u(2) fr01">
+                  <div class="6u">綿密感受獨家還原您滑嫩的美肌</div>
+                  <div class="6u">創造美膚搶購風潮。</div>
+                </div>
+                <div class="row fr02">
+                  <div class="12u">絕佳的深層清潔功能,利用物理吸附原理潔淨因子NSP與天然植物萃取精油及產生真實的透明度,讓純淨更無負擔.</div>
+                </div>
+                <div class="row fr02">
+                  <div class="12u">全員100g/25g可供選擇</div>
+                </div>
+                <a href="#surce" class="button big scrolly">往下瞭解更多</a> </div>
+            </div>
+          </article>
+        </div>
+		<!-- TemplateEndEditable -->
+        <!-- Work -->
+		<div class="wrapper style2">
+			<article id="surce">
+				<header>
+					<h2>這裡包括相關的原料和製程</h2>
+					<p>從嚴選天然原料與潔淨因子-NSP<br>
+				    從最佳配方的形成到完美手工製作完成　都是用心的成果</p>
+				</header>                   
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<section class="box style1" style="height:24em;">
+									<span class="icon featured fa-leaf"></span>
+									   <h3>原料嚴選</h3>
+									   <p>全系列採用:進口天然純淨油脂<br> 棕櫚油 棕仁油 椰子油 蓖麻油 酪梨油<br>完整保留潔淨因子-NSP的物裡吸附力<br>形成最佳完美組合.<br></p>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box style1" style="height:24em;">
+									<span class="icon featured fa-gears"></span>
+									   <h3>手工製程</h3>
+									   <p>堅持60天手工製程<br>100% 高分子技術與一甲子製皂師傅經驗<br>完成奶油般的細緻泡沫<br>加壓工法延展耐用度.</p>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box style1" style="height:24em;">
+									<span class="icon featured fa-eyedropper"></span>
+									<h3>功能添加</h3>
+									<p>獨家蒙托土萃取高分子 潔淨因子-NSP<br><!-- TemplateBeginEditable name="moreAddOn" --><!-- TemplateEndEditable -->100%頂級植物萃取精油<br>芬多精自然散發如親臨大自然<br><br>
+<!-- TemplateBeginEditable name="linebreak" --><!-- TemplateEndEditable -->
+</p>
+								</section>
+							</div>                            
+						</div>
+					</div>
+				<footer>
+					<!--<p>看看深層清潔可以選擇的商品</p>-->
+					<a href="#product" class="button big scrolly">瀏覽商品</a>
+				</footer>
+			</article>
+		</div>
+		<div class="wrapper style5">
+			<article class="container" id="product">
+				<div class="row">
+					<div class="4u 6u(2)8u(3)"><!-- TemplateBeginEditable name="BigPic" --><img src="../www/product/images/pic00-8.jpg" alt="" /><!-- TemplateEndEditable --></div>
+					<div class="8u 10u(2)12u(3)">
+						<header>
+							<h1><!-- TemplateBeginEditable name="BigName" -->梔子花 100g<!-- TemplateEndEditable --></h1>
+						</header>
+						<!--<h3>獨家研究專屬配方　無合成香料　全系列進口天然油脂 </h3>-->
+						<div class="container wra01">
+							<div class="row 25% fr03">
+								<div class="2u 4u(2)6u(3) bk01">皂身尺寸：</div>
+								<div class="10u 10u(2)12u(3)"><!-- TemplateBeginEditable name="productsize" -->直徑：65mm　厚度：22mm　重量：100g<!-- TemplateEndEditable --></div>
+							</div>
+							<div class="row 25% fr03">
+								<div class="2u 4u(2)6u(3) bk01">油脂成份：</div>
+								<div class="10u 10u(2)12u(3)"><!-- TemplateBeginEditable name="productIngr" -->棕櫚油　棕仁油　椰子油　蓖麻油　甘油<!-- TemplateEndEditable --></div>
+							</div>
+							<div class="row 25% fr03">
+								<div class="2u 4u(2) 6u(3) bk01">特殊添加：</div>
+								<div class="10u 10u(2)12u(3)"><!-- TemplateBeginEditable name="BigSpecial" -->潔淨因子NSP　天然萃取植物精油(梔子花)<!-- TemplateEndEditable --></div>
+							</div>
+							<div class="row 25% fr03">                                 
+								<div class="2u 4u(2)6u(3) bk01">適用膚質：</div>                              
+								<div class="10u 10u(2)12u(3)"><!-- TemplateBeginEditable name="suitSkin" -->全膚質適用<!-- TemplateEndEditable --></div>
+							</div>
+							<div class="row 25% fr03">
+								<div class="2u 6u(3) bk01">使用方法：</div>
+								<div class="10u 10u(2)12u(3)">塗抹泡沫至肌膚，無須過度搓洗 物理吸附力產生作用，沖淨即可完成深層潔淨</div>
+							</div>
+							<div class="row 25% fr03">
+								<div class="2u 6u(3) bk01">溫馨提醒：</div>
+								<div class="10u 10u(2)12u(3)">物理吸附力作用時較敏感者有稍微吸附感(非皮膚刺激)</div>
+							</div>
+						</div>
+						<form method="post" action="../www/product/addToCart.php" id="form100">
+							<div class="row">
+                                <div class="4u 6u(2) 12u(3)"><h3>售價 NT. <!-- TemplateBeginEditable name="BigPrice" -->280<!-- TemplateEndEditable --> 元</h3></div>
+                                <div class="8u 6u(2) 12u(3)">
+                                    <div class="row no-collapse">
+                                            <div class="2u 4u(2)"><!-- TemplateBeginEditable name="hiddenProductBig" -->
+                                                <input type"hidden" name="product" value="gardenia100" style="display:none" />
+                                            <!-- TemplateEndEditable -->
+                                                <select name="qty" form="form100" style="margin-top:6px;">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>                                    
+                                             </div>
+                                            <div class="10u 8u(2)"><input type="submit" value="加入購買選單" /></div>									 									</div>
+                                </div>
+							</div>
+					   	</form>					   
+					</div>
+				</div>
+			</article>
+		</div>
+		<div class="wrapper style5">
+			<article class="container" id="product">
+				<div class="row">
+					<div class="4u 6u(2)8u(3)"><!-- TemplateBeginEditable name="smallPic" --><img src="../www/product/images/pic01-8.jpg" alt="" /><!-- TemplateEndEditable --></div>
+					<div class="8u 10(2)12u(3)">
+						<header>
+							<h1><!-- TemplateBeginEditable name="SmallName" -->梔子花 25g<!-- TemplateEndEditable --></h1>
+						</header>
+						<!--<h3>獨家研究專屬配方　無合成香料　全系列進口天然油脂 </h3>-->
+						<div class="container wra01">
+							<div class="row 25% fr03">
+								<div class="2u 4u(2) 6u(3) bk01">皂身尺寸：</div>
+								<div class="10u 10u(2) 12u(3)">直徑：52mm　厚度： 8mm 　重量： 25g</div>
+							</div>
+							<div class="row 25% fr03">
+								<div class="2u 4u(2) 6u(3) bk01">油脂成份：</div>
+								<div class="10u 10u(2) 12u(3)"><!-- TemplateBeginEditable name="smillIngr" -->棕櫚油　棕仁油　椰子油　蓖麻油　甘油<!-- TemplateEndEditable --></div>
+							</div>
+							<div class="row 25% fr03">
+								<div class="2u 4u(2) 6u(3) bk01">特殊添加：</div>
+								<div class="10u 10u(2) 12u(3)"><!-- TemplateBeginEditable name="SmallSpecial" -->潔淨因子NSP　天然萃取植物精油(梔子花)<!-- TemplateEndEditable --></div>
+							</div>
+							<div class="row 25% fr03">   
+								<div class="2u 4u(2) 6u(3) bk01">適用膚質：</div>
+								<div class="10u 10u(2) 12u(3)"><!-- TemplateBeginEditable name="smallSuitSkin" -->全膚質適用<!-- TemplateEndEditable --></div>
+							</div>
+							<div class="row 25% fr03">
+								<div class="2u 4u(2) 6u(3) bk01">使用方法：</div>
+								<div class="10u 10u(2) 12u(3)">塗抹泡沫至肌膚，無須過度搓洗 物理吸附力產生作用，沖淨即可完成深層潔淨</div>
+							</div>
+							<div class="row 25% fr03">
+								<div class="2u 4u(2) 6u(3) bk01">溫馨提醒：</div>
+								<div class="10u 10u(2) 12u(3)">物理吸附力作用時較敏感者有稍微吸附感(非皮膚刺激)</div>
+							</div>
+						</div>                      
+						<form method="post" action="../www/product/addToCart.php" id="form25">   
+							<div class="row">
+                                <div class="4u 6u(2) 12u(3)"><h3>售價 NT. <!-- TemplateBeginEditable name="smallPrice" -->80<!-- TemplateEndEditable --> 元</h3></div>
+                                <div class="8u 6u(2) 12u(3)">
+                                    <div class="row no-collapse">
+                                            <div class="2u 4u(2)"><!-- TemplateBeginEditable name="hiddenSmallProduct" -->
+                                                <input type"hidden" name="product" value="gardenia25" style="display:none" />
+                                                <!-- TemplateEndEditable -->
+                                                <select name="qty" form="form25" style="margin-top:6px;">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                            </div>
+                                        <div class="10u 8u(2)"><input type="submit" value="加入購買選單" /></div>
+                                    </div>
+                                </div>
+                            </div>
+						</form>   
+					</div>
+				</div>
+			</article>
+		</div>
+	<!-- Portfolio -->
+		<div class="wrapper style3">
+			<article class="container" id="products">
+				<header>
+				<h2>想看其他商品 or 直接去結帳?</h2>
+				</header>
+				<footer>
+					<!--<h2>想看看其他的商品還是直接去結帳?</h2>-->
+					<div class="container 50%">
+						<div class="row no-collapse">
+							<div class="6u 12u(3)"><a href="../www/index_new.html#work" class="button big scrolly">看其他商品</a></div>
+							<div class="6u 12u(3)"><a href="../www/product/Cart.php" class="button big scrolly">我想去結帳</a></div>
+						</div>
+					</div>
+				</footer>
+		  </article>
+		</div>
+	<!-- Contact -->
+		<div class="wrapper style4">
+			<article id="contact" class="container 75%">
+				<div>
+					<div class="row">
+						<div class="12u">
+							<h3>EXQUISITE　精雕細琢</h3>
+							<ul>
+								<li>元基生技企業有限公司</li>
+								<li>總公司：台中市西屯區工業區一路2巷3號1F</li>
+								<li>台北營業處：台北市松山區八德路3段12巷7弄4號</li>
+								<li>04-2359-5029　　02-2579-6165</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<footer>
+					<ul id="copyright">
+						<li>COPYRIGHT &copy; 2014 Exquisite.tw All rights reserved.</li><li>Design: HTML5 UP & WE KNOW HOW Design Cooperation.</li>
+					</ul>
+				</footer>
+			</article>
+		</div>
+	</body>
+</html>

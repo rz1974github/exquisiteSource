@@ -5,29 +5,32 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>加入會員</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-        <script type="text/javascript">
-	
-		</script>
-        
-        <?php
-		
+
+<head>
+    <title>加入會員</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><[endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
+	<link rel="stylesheet" href="css/skel.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style-desktop.css" />
+	<link rel="stylesheet" href="css/style-wide.css"/>
+	<link rel="stylesheet" href="css/style-normal.css" />
+    <link rel="stylesheet" href="css/style-narrow.css" />
+    <link rel="stylesheet" href="css/style-narrower.css" />
+    <link rel="stylesheet" href="css/style-mobile.css" />
+    <link rel="stylesheet" href="css/gallery.css"/>
+</noscript>
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><[endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><[endif]-->
+    <script type="text/javascript"></script>
+    <?php
 		session_start();
 		
 		if(isset($_GET['from']))
@@ -36,26 +39,24 @@
 		}
 		
 		?>
-	</head>
-	<body onLoad="discount_changed()">
+</head>
 
-		<!-- Nav -->
-			<nav id="nav">
-               	<ul class="container">
-                    <li><a href="../index.php">EXQUISITE</a></li>
-                    
-					<li><a href="Cart.php">我的購物車<?php echo ($_SESSION['total_count']>0) ?  "(".$_SESSION['total_count'].")" : ""; ?></a></li>
-				</ul>
-               
-			</nav>
-		<!-- Home -->
-			<div class="wrapper cart01">
-			    <article class="container 75%">
-                
-                   <div class="row">
-                      <div class="6u 12u(3) memberbox">
-                          <div class="row">
-							<script>
+<body onLoad="discount_changed()">
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="container">
+            <li><a href="../index.php">EXQUISITE</a></li>
+            <li><a href="Cart.php">我的購物車<?php echo ($_SESSION['total_count']>0) ?  "(".$_SESSION['total_count'].")" : ""; ?></a></li>
+        </ul>
+    </nav>
+    <!-- Home -->
+    <div class="wrapper cart01">
+        <article class="container 75%">
+            <div class="row">
+                <div class="6u 12u(3) memberbox">
+                    <h3>會員登入</h3>
+                    <p class="only-mobile">(請確認已為會員，再由此登入)</p>
+                    <script>
                             var submitLogin=function(event)
                             {
                                 event.preventDefault();
@@ -83,42 +84,19 @@
 									alert("請輸入正確的資訊");
 								}
                             }							
-                            </script>                          
-                          	 
-								  <div class="12u fr26">會員登入</div>
-                           </div>
-                           <form id="loginForm" action="login.php" method="post">
-                           <div class="row">
-								  <div class="12u">
- 									    <div class="row no-collapse">
-										   <div class="4u fr25">會員帳號</div>
-										   <div class="8u fr42">
-										      <div class="row">
-											     <div class="12u">
-                                                    <div class="row 0%">
-												       <input type="email" name="email" placeholder="輸入E-mail" required />
-                                                    </div>
-											     </div>
-										      </div>
-										   </div>
-									    </div>
-								  </div>
-								  <div class="12u">
-									 <div class="row no-collapse">
-										<div class="4u fr25">登入密碼</div>
-										<div class="8u">
-										   <div class="row">
-											  <div class="12u fr42">
-                                                 <div class="row 0%">
-												    <input type="password" name="passwd" placeholder="登入密碼" required />
-                                                    <?php echo "<input type='hidden' name='from' value='{$_GET['from']}' />"; ?>
-                                                 </div>
-											  </div>
-										   </div>
-										</div>                                    
-									 </div>
-								  </div>
-								  <?php 
+                            </script>
+                    <form id="loginForm" action="login.php" method="post">
+                        <div class="row">
+                            <div class="4u not-mobile fr25">會員帳號</div>
+                            <div class="8u fr42">
+                                <input type="email" name="email" placeholder="請輸入E-mail" required />
+                            </div>
+                            <div class="4u not-mobile fr25">登入密碼</div>
+                            <div class="8u fr42">
+                                <input type="password" name="passwd" placeholder="請輸入密碼" required />
+                                <?php echo "<input type='hidden' name='from' value='{$_GET['from']}' />"; ?>
+                            </div>
+                            <?php 
                                   if(isset($_GET['error']))
                                   {
                                     switch($_GET['error'])
@@ -132,77 +110,37 @@
                                     }												  
                                   }
                                   ?>
-								  <div class="12u">
-									 <!--a herf="#" onclick="submitLogin(event)"><div class="4u 6u(3) bgcolor03">登入</div></a-->
-                                     <input class="4u 6u(3) button2" type="submit" value="登入" />
-								  </div>
-							  
-                           </div><!-- row -->
-                           </form>
-                        </div><!-- 6u 12u memberbox-->
-                        <div class="6u 12u(3) memberbox line">
-                            <div class="row">
-							
-								<div class="12u fr26">加入會員</div>
+                            <div class="12u">
+                                <input class="4u 6u(3) button2" type="submit" value="登入" />
                             </div>
-                            <form id="formRegister" action="register.php" method="post">
-                            <div class="row">
-								<div class="12u">
-								 <div class="row no-collapse">
-									<div class="4u 4u(3) fr25">E-mail</div>
-									<div class="8u">
-									   <div class="row">
-										  <div class="12u fr42">
-											 <input type="email" name="email" planceholder="設定帳號" required />
-										  </div>
-									   </div>
-									</div>
-								 </div>
-								</div><!-- 12u -->
-								<div class="12u">
-								 <div class="row no-collapse">
-									<div class="4u 4u(3) fr25">設定密碼</div>
-									<div class="8u">
-									   <div class="row">
-										  <div class="12u fr42">
-											 <input type="password" name="passwd" display="設定密碼" required />
-										  </div>
-									   </div>
-									</div>
-								 </div>
-								</div>
-								<div class="12u">
-								 <div class="row no-collapse">
-									<div class="4u 4u(3) fr25">確認密碼</div>
-									<div class="8u">
-									   <div class="row">
-										  <div class="12u fr42">
-											 <input type="password" name="passwd2" planceholder="確認密碼" required />
-										  </div>
-									   </div>
-									</div>
-								 </div>
-								</div>
-								<div class="12u">
-								 <div class="row no-collapse">
-									<div class="4u 4u(3) fr25">真實姓名</div>
-									<div class="8u">
-									   <div class="row">
-										  <div class="12u fr42">
-											 <input type="name" name="name" planceholder="(你的名字)" required />
-										  </div>
-									   </div>
-									</div>
-								 </div>
-								</div>
-								<div class="12u">
-                                    <div class="row">
-                                        <div class="12u fr43"><input type="radio" name="legal" value="是的" planceholder="" required />
-                                        是的，我已閱讀並同意服務條款與購物須知。</div>
-                                    </div>
-                                
-                                    
-									<?php 
+                        </div>
+                    </form>
+                </div>
+                <div class="6u(1) 12u(3) memberbox line">
+                    <h3>加入會員</h3>
+                    <p class="only-mobile">(歡迎成為新會員，請依提示新增資料)</p>
+                    <form id="formRegister" action="register.php" method="post">
+                        <div class="row">
+                            <div class="4u not-mobile fr25">E-mail</div>
+                            <div class="8u">
+                                <input type="email" name="email" placeholder="請設定會員登入帳號" required />
+                            </div>
+                            <div class="4u not-mobile fr25">設定密碼</div>
+                            <div class="8u">
+                                <input type="password" name="passwd" placeholder="請設定會員登入密碼" required />
+                            </div>
+                            <div class="4u not-mobile fr25">確認密碼</div>
+                            <div class="8u">
+                                <input type="password" name="passwd2" placeholder="再次確認會員登入密碼" required />
+                            </div>
+                            <div class="4u not-mobile fr25">真實姓名</div>
+                            <div class="8u">
+                                <input type="name" name="name" placeholder="真實(收件者)姓名" required />
+                            </div>
+                            <div class="12u">
+                                <input type="radio" name="legal" value="是的" required /><span class="sp12">是的，我已閱讀並同意服務條款與購物須知。</span>
+                            </div>
+                            <?php 
                                     if(isset($_GET['error']))
                                     {
 										switch($_GET['error'])
@@ -218,46 +156,27 @@
 											break;
 										}												  
                                     }
-                                    ?>
-                                    <!--div class="row 0% no-collapse">
-                                    </div-->
-								</div>
-								<div class="12u">
-								 <div class="row 150%">
-									<div class="12u">
-									   <!--a href="#">
-										  <!--div class="4u 6u(3)"-->
-											 <a herf="#" onclick="submitRegister(event)"><div class="4u 6u(3) bgcolor03">加入會員</div></a-->
-                                             <!--input class="button2" type="button" value="加入會員" />
-										  <!--/div-->
-									   </a>
-									</div>
-								 </div>
-								</div>
-							  
-                            </div><!-- row -->
-                            </form>
-                         </div>
-                      </div>
-                      <div class="6u 12u(3) memberbox">
-                         <div class="row">
-                              <div class="12u fr26">訪客結帳</div>
-                              <div class="12u memberstyle04">以訪客方式繼續購買，選擇配送方式</div>
-                              <div class="12u">
-                                 <a href="<?php echo $_GET['from']; ?>">
-                                    <div class="4u 6u(3) button2">前往＞</div>
-                                 </a>
-                              </div>
-                         </div>
-                      </div>
-                      <div class="6u memberbox">
-                         <div class="row">
-                            <div class="12u"></div>
-                         </div>
-                      </div>
-                   </div>
-	<!-- Contact -->
-		<?php
+                            ?>
+                            <div class="12u">
+                                <input class="4u 6u(3) button2" type="button" onclick="submitRegister(event)" value="加入會員" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="6u 12u(3) memberbox">
+                    <h3>訪客直接結帳</h3>
+                    <p>(以訪客身份，繼續選擇配送方式)</p>
+                    <div class="row">
+                        <div class="12u">
+                            <input class="4u 6u(3) button2" type="button" value="前往結帳" onclick="location.href='<?php echo $_GET[ 'from']; ?>'" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <!-- Contact -->
+    <?php
 		
 		include_once("part_Notice.php");
 		include_once("part_Footer.php");
@@ -266,5 +185,6 @@
 		echo $footerSec;
 		
 		?>
-	</body>
+</body>
+
 </html>

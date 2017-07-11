@@ -8,7 +8,8 @@
 	<head>
                     <!--[google mail]-->
         <meta name="google-site-verification" content="22eKb47mFIEXSH6kYTTU7aimZmuAz5Yh4LfpiLUZyTA" />
-		<title>EXQUISITE 精雕細琢</title>
+        <meta name="google-site-verification" content="EQqfbLryfya7gPtEVyJlxnZtIOVJQxOjjD1BpGab0ss" />
+		<title>EXQUISITE 未來美製皂機_奈米矽皂</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -67,6 +68,7 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro">TOP</a></li>
+                            <li><a href="#">BLOG</a></li>
                             <li><a href="#advanced">深入了解</a></li>
 							<li><a href="#our_product">我們的產品</a></li>
 							<li><a href="#contact">聯絡我們</a></li>
@@ -91,7 +93,7 @@
             <section id="one" class="main style2 right fullscreen">
 				<div class="content box style2">
                    <div class="12u">
-                     <img class="8u 10u(2) 10u(3) 10u(4) 10u(5) 10u(6) 12u(7)" src="images/PIC00-1-3white_small-6.png">
+                     <img class="8u 10u(2) 10u(3) 10u(4) 10u(5) 10u(6) 12u(7)" src="images/PIC00-1-3white_small-7.png">
                    </div>
                </div>
            
@@ -102,7 +104,7 @@
 			<section id="two" class="main style2 left fullscreen">
 				<div class="content box style2">
                    <div class="12u">
-                      <img class="8u 10u(2) 10u(3) 10u(4) 10u(5) 10u(6) 12u(7)" src="images/PIC00-9-2_800_609.png">
+                      <img class="8u 10u(2) 10u(3) 10u(4) 10u(5) 10u(6) 12u(7)" src="images/PIC00-9-2_800_610.png">
                    </div>
 			  </div>
 				<a href="#advanced" class="button style2 down anchored">Next</a>
@@ -118,7 +120,7 @@
                      <div class="container gallery">
 							<div class="row 0% flush images">
 								<div class="6u">
-                                   <div class="10u 8u(4) 6u(5) 10u(7) image from-left"><img src="images/oil_500_500.png"></div>
+                                   <div class="10u 8u(4) 6u(5) 10u(7) image from-left"><img src="images/oil_500_500-1.png"></div>
                                 </div>
 								<div class="6u">
                                    <div class="12u diva-right from-right">
@@ -297,7 +299,7 @@
                                  <div class="row no-collapse">
                                       <div class="3u 6u(6) fr09 select_box">
                                          <a target="_blank" href="Professional/pancel1.html"><img class="12u" src="images/nanonew-2-3.png"/></a>
-                                         <span>專業2大解析(神奇奈米矽片的成分與幫助)</span>
+                                         <span>專業2大解析(神奇奈米矽皂(片)的成分與幫助)</span>
                                       </div>
                                       <div class="3u 6u(6) fr09 select_box">
                                          <a target="_blank" href="Professional/pancel3.html"><img class="12u" src="images/nanonew-1-3.png"/></a>
@@ -403,17 +405,17 @@
 							         <div class="6u 12u(3)"><h3>元基生技企業有限公司</h3></div-->
                                <div class="row">
                                   <div class="4u fr08">元基生技企業有限公司</div>
-                                  <div class="6u fr10">
+                                  <div class="4u fr10">
                                      <div class="row">
 							            <ul>
-								           <li class="fr10">總公司：台中市西屯區工業區一路2巷3號1F</li>
+								           <li class="fr10">總公司：台中市南屯區大隆路95號1F</li>
 								           <li class="fr10">台北營業處：台北市松山區八德路3段12巷7弄4號</li>
                                         </ul>
                                      </div>
                                   <div class="2u">
                                      <div class="row">
                                         <ul class="company">
-								           <li>04-2359-5029</li>
+								           <li>04-2327-0966</li>
                                            <li>02-2579-6165</li>
 							            </ul>
 					                 </div>
