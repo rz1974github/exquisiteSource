@@ -168,9 +168,7 @@
             <div class="row not-mobile">
                 <div class="5u">
                     <img id="productImage" class="10u" src="images/100-1-1_326x326.png">
-                    <!--div class="row"-->
                     <h4>售價　TWD NT$ 280</h4>
-                    <!--/div-->
                 </div>
                 <div class="7u">
                     <div class="row">
@@ -183,14 +181,17 @@
                             </ul>
                             <ul class="item">
                                 <li>
-                                    <h4>[ 輕洗顏 ] -</h4>
+                                    <div class="lsbelSeriesB">
+                                        <font style="font-weight: normal;font-size:0.9em">輕洗顏</font>
+                                        <font style="color:brown;font-size:0.5em;font-weight:normal">series</font>
+                                    </div>
                                 </li>
                                 <li>
                                     <h4>奈米矽皂</h4>
                                 </li>
                             </ul>
                             <p>首創超簡單深層清潔大公開，以輕洗顏的方式來強調輕柔呵護肌膚的重要性。運用最新專利技術，做到用敷的就能深層清潔的神奇力量，能重現肌膚會呼吸的柔細與光澤。
-                                <font style="color:brown;font-size:1.5em;font-weight: bold">熱情推薦!</font>
+                                <font style="color:brown;font-size:1.25em">熱情推薦!</font>
                             </p>
                             <div class="row fr403">
                                 <div class="8u">
@@ -289,10 +290,12 @@
                         </div>
                     </form>
                     <div class="row 25% fr42 fr321" id="labeling">
-                        <span>貼心提醒：由於商品每批限量製作，因此顏色將會有些許誤差，屬正常範圍。</span>
+                        <span>貼心提醒：由於商品當批製作，因此顏色將會有些許誤差，屬正常範圍。</span>
                         <ul>
                             <p>〔天然成分〕</p>
-                            <li>NSP天然淨化因子(奈米矽片)，棕櫚油，棕仁油，椰子油，天然產生之甘油，蓖麻油，頂級植物萃取香氛精油。</li>
+                            <li>NSP天然淨化因子(奈米矽片)，棕櫚油，棕仁油，椰子油，天然甘油，蓖麻油，
+							<font style="color:darkorange;font-weight: 500">頂級植物萃取香氛精油</font>。
+							</li>
                         </ul>
 
                         <p>〔使用方法〕</p>
@@ -332,14 +335,17 @@
                     </ul>
                     <ul class="item">
                         <li>
-                            <h4>[ 輕洗顏 ] -</h4>
+                            <div class="lsbelSeriesB">
+                                <font style="font-weight: normal;font-size:0.85em">輕洗顏</font>
+                                <font style="color:brown;font-size:0.5em;font-weight:normal">series</font>
+                            </div>
                         </li>
                         <li>
                             <h4>奈米矽皂</h4>
                         </li>
                     </ul>
                     <p>首創超簡單深層清潔大公開，運用最新專利技術，以輕洗顏的方式，用敷的就深層清潔，即能重現肌膚會呼吸的柔細與光澤。
-                        <font style="color:brown;font-size:1.1em;font-weight: 700">熱情推薦!</font>
+                        <font style="color:brown;font-size:1.1em;font-weight: 600">熱情推薦!</font>
                     </p>
                     <div class="row">
                         <div class="10u fr42">
@@ -409,11 +415,9 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <!--/div-->
-                                <div class="row fr303 fr42">
-                                    <h3></h3>
-                                    <div class="12u">
-                                        <select class="12u select" name="qty" id="qtyB">
+                            </div>
+                            <div class="12u">
+                                <select class="12u select" name="qty" id="qtyB">
 						          <option value="0">--請選擇數量--</option>
 							      <option value="1">1</option>
 							      <option value="2">2</option>
@@ -428,15 +432,13 @@
 							      <option value="11">11</option>
 							      <option value="12">12</option>
 						        </select>
-                                    </div>
-                                </div>
                             </div>
                             <div class="12u">
                                 <div class="row" id="combination">
                                     <div class="12u">
                                         <input class="8u button2" type="button" onclick="submitFormB(event)" href="Cart.php" value="加入購物車" />
                                     </div>
-                                    <p class="oder4price">貼心提醒：由於商品每批限量製作，因此顏色將會有些許誤差，為正常範圍。</p>
+                                    <p class="oder4price">貼心提醒：由於商品當批製作，因此顏色將會有些許誤差，為正常範圍。</p>
                                 </div>
                             </div>
                         </div>
@@ -447,8 +449,9 @@
                     <div class="row" id="labeling">
                         <h3>商品相關介紹</h3>
                         <div class="12u fr42">
-                            <p>〔純天然成分〕</p>
-                            <span>NSP天然淨化因子(奈米矽片)，棕櫚油，棕仁油，椰子油，天然甘油，蓖麻油，頂級植物萃取香氛精油。</span>
+                            <p>〔天然成分〕</p>
+                            <span>NSP天然淨化因子(奈米矽片)，棕櫚油，棕仁油，椰子油，天然甘油，蓖麻油，
+							<font style="color:darkorange;font-weight: 500">頂級植物萃取香氛精油。</font></span>
                         </div>
                         <div class="12u fr42" -->
                             <p>〔超簡單使用方法〕</p>
@@ -477,7 +480,7 @@
             </div>
             <div class="row not-mobile">
                 <div class="12u fr37 fr42 fr100 fr403">Made in Taiwan</div>
-            　</div>
+            </div>
 
         </article>
         <article class="content container not-mobile">

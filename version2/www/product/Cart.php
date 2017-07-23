@@ -268,7 +268,11 @@ ITEM_DETAIL;
 									<div class='row 0%'>
 										<div class='12u cartpad02'>
 											<div class='row no-collapse'>
-												<div class='4u 6u(2) 12u(3)'><a href='{$productLink[$item]}'><img class='10u 6u(2) 6u(3)' src='images/{$productPhoto[$item]}'></a></div>
+												<div class='4u 6u(2) 12u(3)'>
+												<a href='{$productLink[$item]}'>
+												<img class='10u 6u(2) 6u(3)' src='images/{$productPhoto[$item]}'>
+												</a>
+												</div>
 												<div class='8u 9u(2) 12u(3)'>
 													<div class='row cartporjet'>
 														<div class='12u fr42 pjtcolor01'>奈米矽皂--天然精油系列 [{$category}]</div>

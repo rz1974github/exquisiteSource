@@ -3,7 +3,7 @@
 $footerSec=<<<FOOTER_SEC
 
 		<!-- Contact -->
-	<div class="wrapper style4">
+    <div class="wrapper style4">
         <article id="contact" class="container 75%">
             <div class="row 0% not-mobile">
                 <div class="4u company"><img class="2u 1u(7)" src="images/jkbiologo.gif">
@@ -11,7 +11,7 @@ $footerSec=<<<FOOTER_SEC
                 </div>
                 <div class="8u">
                     <ul id="address">
-                        <li>台中總公司：台中市南屯區大隆路95號　TEL：04-23595029　FAX：04-23500283</li>
+                        <li>台中總公司：台中市南屯區大隆路95號　TEL：04-23270966　FAX：04-23272559</li>
                         <li>台北營業處：台北市內湖區民權東路六段180巷6號10F-14　TEL：02-87918327　FAX：02-87918328</li>
                     </ul>
                 </div>
@@ -26,8 +26,8 @@ $footerSec=<<<FOOTER_SEC
                             <span class="">台中總公司</span>
                             <ul class="info">
                                 <li class="12u">台中市南屯區大隆路95號</li>
-                                <li>TEL：04-23595029</li>
-                                <li>FAX：04-23500283</li>
+                                <li>TEL：04-23270966</li>
+                                <li>FAX：04-23272559</li>
                             </ul>
                         </div>
                         <div class="12u companyinfo">
@@ -36,7 +36,6 @@ $footerSec=<<<FOOTER_SEC
                                 <li class="12u">台北市內湖區民權東路六段180巷6號10F-14</li>
                                 <li>TEL：02-87918327</li>
                                 <li>FAX：02-87918328</li>
-                                <!--li class="info">台北營業處：台北市內湖區民權東路六段180巷6號10F-14　TEL：02-87918327　FAX：02-87918328</li-->
                             </ul>
                         </div>
                     </div>

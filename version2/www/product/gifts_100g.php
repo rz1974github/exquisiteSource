@@ -180,18 +180,20 @@
 				add_member_option("","gifts_100g.php");
 				
                 ?>
-            <li id="viewportSize">
-                <script>
+            <!--li id="viewportSize">
+                <!--script>
                     currentWidth();
-                </script>
-            </li>
+                </script-->
+            <!--/li-->
         </ul>
     </nav>
     <!-- Home -->
     <div class="wrapper style5">
         <article class="content container 75%">
             <div class="row not-mobile">
-                <div class="5u"><img id="productImage" class="12u" src="images/pic25-1.jpg"></div>
+                <div class="5u">
+                    <img id="productImage" class="12u" src="images/pic25-1.jpg">
+                </div>
                 <div class="7u">
                     <div class="row">
                         <div class="12u fr42">
@@ -203,13 +205,20 @@
                             </ul>
                             <ul class="item">
                                 <li>
-                                    <h4>植淬賦活組</h4>
+                                    <div class="lsbelSeriesW">
+                                        <font style="font-weight: normal;font-size:0.9em">植淬賦活</font>
+                                        <font style="color:brown;font-size:0.5em;font-weight:normal">set</font>
+                                    </div>
                                 </li>
                                 <li>
-                                    <h4>[ 4入任選系列 ]</h4>
+                                    <h4>精選4入組</h4>
                                 </li>
                             </ul>
-                            <p>包裝呈現肌膚最能擁有完美裸肌的想像，做為最佳餽贈好禮的體現。讓肌膚健康、清透、水嫩、與保有光澤，能分享給朋友或愛護全家人一起防護，超精省。</p>
+                            <p>無論是
+                                <font style="color:darkorange">輕洗顏</font>，還是
+                                <font style="color:darkorange">逆青春駐妍保養</font>，可多重搭配的100g隨選4入組，讓肌膚健康完全不受限。包裝呈現出最能擁有完美裸肌的想像，是最佳餽贈好禮的體現，分享給朋友或愛護全家人，讓餽贈 自用 防護超精省。
+                                <font style="color:brown;font-size:1.25em">超值好禮!</font>
+                            </p>
                             <div class="row fr403">
                                 <div class="8u">
                                     <div class="row no-collapse">
@@ -302,12 +311,11 @@
                         </div>
                     </form>
                     <div class="row 25% fr42 fr321" id="labeling">
-                        <span>貼心提醒：由於商品每批限量製作，因此顏色將會有些許誤差，屬正常範圍。</span>
+                        <span>貼心提醒：由於商品當批製作，因此顏色將會有些許誤差，屬正常範圍。</span>
                         <ul>
                             <p>〔天然成分〕</p>
-                            <li>NSP天然淨化因子(奈米矽片)，棕櫚油，棕仁油，椰子油，天然產生之甘油，蓖麻油，頂級植物萃取香氛精油。</li>
+                            <li>NSP天然淨化因子(奈米矽片)，棕櫚油，棕仁油，椰子油，天然甘油，蓖麻油，頂級植物萃取香氛精油。</li>
                         </ul>
-                        <!--ul-->
                         <p>〔使用方法〕</p>
                         <table class="12u stepStyle">
                             <tr class="12u">
@@ -332,7 +340,9 @@
                 </div>
             </div>
             <div class="row only-mobile">
-                <img id="productImage" class="12u" src="images/pic25-1.jpg">
+                <div class="12u">
+                    <img id="productImage" class="12u" src="images/pic25-1.jpg">
+                </div>
                 <div class="12u fr42 fr403">
                     <ul class="fr49 item">
                         <li id="best">BEST
@@ -343,13 +353,20 @@
                     </ul>
                     <ul class="item">
                         <li>
-                            <h4>植淬賦活組</h4>
+                            <div class="lsbelSeriesW">
+                                <font style="font-weight: normal;font-size:0.85em">植淬賦活</font>
+                                <font style="color:brown;font-size:0.5em;font-weight:normal">set</font>
+                            </div>
                         </li>
                         <li>
-                            <h4>[ 4入任選系列 ]</h4>
+                            <h4>精選4入組</h4>
                         </li>
                     </ul>
-                    <p>包裝呈現肌膚最能擁有完美裸肌的想像，做為最佳餽贈好禮的體現。讓肌膚健康、清透、水嫩、與保有光澤，能分享給朋友或愛護全家人一起防護，超精省。</p>
+                    <p>無論是
+                        <font style="color:darkorange">輕洗顏</font>，還是
+                        <font style="color:darkorange">逆青春駐妍保養</font>，可多重搭配的100g隨選4入組，讓肌膚健康完全不受限。能分享給朋友或愛護全家人，讓餽贈 自用 防護超精省。
+                        <font style="color:brown;font-size:1.25em">超值好禮!</font>
+                    </p>
                     <div class="row">
                         <div class="10u fr42">
                             <div class="row no-collapse">
@@ -364,7 +381,7 @@
                 <div class="12u fr403 fr331">
                     <h3>請選擇組合內容(4入可複選)</h3>
                     <form action="<?php echo $_SERVER[PHP_SELF]; ?>" method="post" id="orderFormB">
-                        <div class="row no-collapse fr403">
+                        <div class="row">
                             <div class="12u" id="options">
                                 <ul>
                                     <li>
@@ -441,7 +458,7 @@
                     <div class="row" id="labeling">
                         <h3>商品相關介紹</h3>
                         <div class="12u fr42">
-                            <p>〔純天然成分〕</p>
+                            <p>〔天然成分〕</p>
                             <span>NSP天然淨化因子(奈米矽片)，棕櫚油，棕仁油，椰子油，天然甘油，蓖麻油，頂級植物萃取香氛精油。</span>
                         </div>
                         <div class="12u fr42" -->
