@@ -20,7 +20,7 @@
 <file name="logout.php" server="210.242.72.238" local="131334444000000000" remote="131334444000000000" Dst="0" />
 <file name="member.php" server="210.242.72.238" local="131425310400000000" remote="131425310400000000" Dst="0" />
 <file name="member_common.php" server="210.242.72.238" local="131334444000000000" remote="131334444000000000" Dst="0" />
-<file name="NanoSoap1.php" server="210.242.72.238" local="131447715600000000" remote="131447715600000000" Dst="0" />
+<file name="NanoSoap1.php" server="210.242.72.238" local="131455324200000000" remote="131455324200000000" Dst="0" />
 <file name="NanoSoap2.php" server="210.242.72.238" local="131447715600000000" remote="131447715600000000" Dst="0" />
 <file name="NanoSoapAll.php" server="210.242.72.238" local="131432998200000000" remote="131432998200000000" Dst="0" />
 <file name="NanoSoapAll01.php" server="210.242.72.238" local="131334444000000000" remote="131334444000000000" Dst="0" />
@@ -48,4 +48,7 @@
 <file name="changePassword.php" server="210.242.72.238" local="131334444000000000" remote="131334444000000000" Dst="0" />
 <file name="productSql.php" server="210.242.72.238" local="131334444000000000" remote="131334444000000000" Dst="0" />
 <file name="sql.php" server="210.242.72.238" local="131334444000000000" remote="131334444000000000" Dst="0" />
+<file name="Cart1.html" server="210.242.72.238" local="131456358000000000" remote="131456358000000000" Dst="0" />
+<file name="Cart1-2.html" server="210.242.72.238" local="131456358000000000" remote="131456358000000000" Dst="0" />
+<file name="Cart_step2.html" server="210.242.72.238" local="131455242600000000" remote="131455242600000000" Dst="0" />
 </dwsync>

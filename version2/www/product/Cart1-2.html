@@ -1,0 +1,544 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>購物車清單</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+    </noscript>
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    <!--    
+       <script type="text/javascript">
+        var parameterChanged = function() {
+            var oTotal = document.getElementById("id_total");
+
+            //折扣
+            var oOrderDiscount = document.getElementById("id_order_discount");
+            if (oOrderDiscount != null) {
+                js_orderDiscount = oOrderDiscount.value;
+            }
+
+            //點數
+            var js_discountMerchant = Math.round(js_merchantTotal * js_orderDiscount);
+            oRemainPoint = document.getElementById("id_remain");
+            if (js_userLogged) {
+                if (js_isDealer) {
+                    oPoint = document.getElementById("id_pointsToUse_input");
+                    js_pointsToUse = oPoint.value;
+                    var js_maxValue = Math.min(Math.min(js_discountMerchant, js_member_points), var_jsMaxPointsToUse);
+                    oPoint.setAttribute('maxvalue', js_maxValue);
+                } else {
+                    js_pointsToUse = Math.min(Math.min(js_discountMerchant, js_member_points), var_jsMaxPointsToUse);
+                    oPoint = document.getElementById("id_pointsToUse");
+                    if (oPoint != null) {
+                        oPoint.innerHTML = js_pointsToUse;
+                    }
+                }
+                js_remainPoint = js_member_points - js_pointsToUse;
+                oRemainPoint.innerHTML = js_remainPoint;
+            }
+
+            //折扣後金額
+            js_discountMerchant -= js_pointsToUse;
+            var oDiscountMerchant = document.getElementById("id_discount_merchant");
+            if (oDiscountMerchant != null) {
+                oDiscountMerchant.innerHTML = "NT$ " + js_discountMerchant + "元";
+            }
+
+            //運費改變
+            if (js_discountMerchant >= js_noFeeAmount) {
+                js_shippingFee = 0;
+            } else {
+                js_shippingFee = js_basicShipping;
+            }
+            var oShipping = document.getElementById("id_shippingFee");
+            oShipping.innerHTML = "NT$ " + js_shippingFee + "元";
+
+            //總數
+            var js_total = js_discountMerchant + js_shippingFee;
+            oTotal.innerHTML = "NT$ " + js_total + "元";
+        }
+
+        var cartNext = function(event, nextFile, checkLogIn) {
+            event.preventDefault();
+            var oForm = document.createElement("form");
+            oForm.setAttribute("method", "post");
+            oForm.setAttribute("action", "Cart-Next.php");
+            var params = [];
+
+            //點數
+            oPoint = document.getElementById("id_pointToUse");
+            if (oPoint != null) {
+                js_pointsToUse = oPoint.value;
+            }
+            params["js_pointsToUse"] = js_pointsToUse;
+
+            oDiscount = document.getElementById("id_order_discount");
+            if (oDiscount != null) {
+                js_orderDiscount = oDiscount.value;
+            }
+            params["js_orderDiscount"] = js_orderDiscount;
+
+            params["nextFile"] = nextFile;
+            params["checkLogIn"] = checkLogIn;
+
+            for (var key in params) {
+                var hiddenField = document.createElement("input");
+                hiddenField.setAttribute("type", "hidden");
+                hiddenField.setAttribute("name", key);
+                hiddenField.setAttribute("value", params[key]);
+                oForm.appendChild(hiddenField);
+            } //for
+
+            document.body.appendChild(oForm);
+            oForm.submit();
+        }
+    </script>
+-->
+    <!--
+        <?php
+
+		include_once("../global.php");
+		include('orderSerial.php');
+		
+		session_start();
+		
+		include_once("member_common.php");
+		
+		include("../common/sharedCode.php");
+		?>
+-->
+</head>
+
+<body onload="parameterChanged()">
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="container">
+            <li><a href="../index.php">EXQUISITE</a></li>
+
+            <li><a href="#">我的購物車
+<!--
+            <?php echo ($_SESSION['total_count']>0) ?  "(".$_SESSION['total_count'].")" : ""; ?>
+-->
+            </a>
+            </li>
+            <!--
+            ?php
+				add_member_option("","Cart.php");
+
+		     ?>
+-->
+        </ul>
+
+    </nav>
+    <!-- Home -->
+    <div class="wrapper cart">
+        <article class="content container 75%">
+            <div class="row">
+                <div class="12u oderStep">
+                    <ul>
+                        <li>
+                            <div class="Step-Not-choose">STEP1 訂單確認</div>
+                        </li>
+                        <li>
+                            <div class="Step-int"></div>
+                        </li>
+                        <li>
+                            <div class="Step-Select-image">STEP2 金額確認</div>
+                        </li>
+                        <li>
+                            <div class="Step-int"></div>
+                        </li>
+                        <li>
+                            <div class="Step-Not-choose">STEP3 付款方式</div>
+                        </li>
+                        <li>
+                            <div class="Step-int"></div>
+                        </li>
+                        <li>
+                            <div class="Step-Not-choose">STEP4 結帳完成</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="12u">
+                    <h3>金額明細確認</h3>
+
+                    <!--
+                ";
+                }//if
+            }//foreach
+        //1.商品總計
+         $_SESSION['merchantTotal']=$merchantTotal;
+        //本次新增點數 
+         $_SESSION['discount_merchant'] = round($_SESSION['merchantTotal']*$_SESSION['order_discount']);
+         $_SESSION['newPoints']=floor($_SESSION['discount_merchant']*0.01)*5;
+        //2.折扣 
+         $pointsToUseStr=""; 
+         if(userLogged()) 
+         {
+            if(isDealer()) 
+            { 
+                $_SESSION['pointsToUse'] = 0;
+                 //可調整使用點數
+                  $maxPoints = min(min($_SESSION['member_points'],$_SESSION['merchantTotal']),$_SESSION['max_pointsToUse']); 
+                  $pointsToUseStr = "<input type='number' name='pointsToUse' id='id_pointsToUse_input' min='0' max='{$maxPoints}' value='{$_SESSION[' pointsToUse ']}' onChange='parameterChanged()'>";
+            } else 
+                { 
+                       //設定最高金額點數 
+                       $_SESSION['pointsToUse'] = min(min($_SESSION['member_points'],$_SESSION['discount_merchant']),$_SESSION['max_pointsToUse']);
+                       $pointsToUseStr = "<span id='id_pointsToUse'>{$_SESSION['pointsToUse']}</span>";
+                }
+                //else
+            }
+            $_SESSION['discount_merchant']-=$_SESSION['pointsToUse']; 
+            if(!isset($_SESSION['total_count'])) $_SESSION['total_count']=0;
+            if($_SESSION['total_count']==0) 
+            { 
+                echo "
+-->
+
+                    <!--
+                ";
+            }//else 
+            //3.運費 
+            $_SESSION['shippingFee']=$_SESSION['basicShipping']; 
+            $feeColor="#F00"; 
+            if($_SESSION['discount_merchant']>=$_SESSION['noFeeAmount']) 
+            { 
+               $_SESSION['shippingFee']=0;
+            }//if
+             ?>
+-->
+
+                    <!--
+                    ?php echo"
+-->
+
+
+                    <table class="fr42">
+
+                        <tr>
+                            <td style="width:10%"></td>
+                            <td style="width:30%">訂購總數Amount</td>
+                            <td style="width:10%">
+                                <?php echo "共 {$_SESSION['total_count']}件";?>123
+                            </td>
+
+
+
+
+                            <td style="width:30%">小計金額Subtotal</td>
+                            <td style="width:10%">
+                                <?php echo "NT$ {$_SESSION['merchantTotal']}元";?>5555
+                            </td>
+                            <td style="width:10%"></td>
+                        </tr>
+
+
+
+
+
+                        <!--
+                            <?php
+			
+		//經銷商可調折扣
+		/*
+		$discountString="";		 
+		if(isset($_SESSION['member_discount']) && ($_SESSION['member_discount']<$_SESSION['member_def_discount']))
+		{					
+			$discountString="<select id='id_order_discount' name='order_discount' onChange='parameterChanged()'>";
+			for($i=$_SESSION['member_def_discount']*100;$i>=($_SESSION['member_discount']*100);$i--)
+			{
+				$value=$i*0.01;
+				$valueWord=$i*0.1;
+				$preselected = "";
+				if($i==($_SESSION['order_discount']*100))
+				{
+					$preselected="selected";
+				}						
+				$discountString.="<option value='{$value}' {$preselected}>{$valueWord}</option>";
+			}                               
+			$discountString.="</select>折";
+		}
+		else
+		*/
+		if($_SESSION['order_discount'] < 0.99)
+		{
+			$jer = $_SESSION['order_discount'] * 10;
+			$discountString="{$jer}折";
+		}
+			
+$off_sec=<<<OFF_SEC
+-->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>會員折扣Off</td>
+                            <td>{$discountString}</td>
+                            <td></td>
+                        </tr>
+
+
+
+                        <!--
+								
+OFF_SEC;
+		
+		//點數
+$point_sec=<<<POINT_SESSION
+
+-->
+                        <tr style="border-bottom:1px dotted #ccc">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>紅利點數Dividend</td>
+                            <td id="id_discount_merchant">{$pointsToUseStr}點/尚有<span id="id_remain">{$_SESSION['member_points']}</span>點</td>
+                            <td></td>
+                        </tr>
+
+
+                        <!--
+								
+POINT_SESSION;
+
+			if(userLogged())
+			{
+				echo $off_sec;
+				echo $point_sec;
+			}
+
+$dis_sec=<<<discount_session
+
+-->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>折扣後金額Discounted</td>
+                            <td>NT$ {$_SESSION['discount_merchant']}元</td>
+                            <td></td>
+                        </tr>
+                        <!--
+    discount_session;
+		if($_SESSION['order_discount']<0.99)
+		{
+			echo $dis_sec;
+		}
+?>
+-->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>運費Shipping</td>
+                            <td id="id_shippingFee">NT$
+                                <?php echo $_SESSION['shippingFee'] ?>元</td>
+                            <td></td>
+                        </tr>
+
+                        <!--
+<?php
+		//本次新增點數
+
+$newPointsSec=<<<NEWPOINT_SEC
+-->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>獲得點數Gain</td>
+                            <td id="id_shippingFee">{$_SESSION['newPoints']}點</td>
+                            <td></td>
+                        </tr>
+
+                        <!--                    
+                                
+NEWPOINT_SEC;
+		
+		if(userLogged())
+		{
+			echo $newPointsSec;
+		}
+
+		//總金額
+		$_SESSION['total_money']=$_SESSION['discount_merchant']+$_SESSION['shippingFee'];
+		
+		$pointString="var js_pointsToUse=".(isset($_SESSION['pointsToUse']) ? "{$_SESSION['pointsToUse']};" : "0;");
+		$memberPointString="";
+		if(isset($_SESSION['member_points']))
+		{
+			$memberPointString="var js_member_points={$_SESSION['member_points']};";
+		}
+		
+		$userLoggedBool = userLogged();
+		$isDealerBool = isDealer();
+		
+		echo "
+-->
+                        <tfoot>
+                            <tr>
+                                <td colspan="5" id="id_total" class="subtotallist money01">NT$ {$_SESSION['total_money']}</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <!--
+                            <script type='text/javascript'>
+                                var js_merchantTotal = {
+                                    $merchantTotal
+                                };
+                                var js_orderDiscount = {
+                                    $_SESSION['order_discount']
+                                };
+                                var js_shippingFee = {
+                                    $_SESSION['shippingFee']
+                                };
+                                var js_basicShipping = {
+                                    $_SESSION['basicShipping']
+                                };
+                                var js_noFeeAmount = {
+                                    $_SESSION['noFeeAmount']
+                                };
+                                var_jsMaxPointsToUse = {
+                                    $_SESSION['max_pointsToUse']
+                                };
+                                var js_isDealer = '{$isDealerBool}';
+                                var js_userLogged = '{$userLoggedBool}'; {
+                                    $pointString
+                                } {
+                                    $memberPointString
+                                }
+                            </script>
+-->
+                    <!--
+		";
+?>
+-->
+                    <!--/div-->
+                    <!--  choosing  -->
+                    <!--
+                        <?php
+
+$nonMemberSec=<<<NON_SEC
+
+-->
+                    <div class="row fr42">
+                        <div class="12u fr42">
+                            <ul>
+                                <li>提醒您加入會員即刻享有95折優惠，另加紅利點數回饋下次購物即享折抵。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--                                   
+                                    
+NON_SEC;
+
+$memberSec=<<<MEMBER_SEC
+-->
+
+                <div class="row fr42">
+
+                    <div class="12u">
+
+                        <h8>會員折扣與紅利點數計算說明：</h8>
+                        <ol style="list-style-type:decimal">
+                            <li>加入會員首筆訂單起即享售價＊95折優惠，特殊活動則另依公告執行。</li>
+                            <li>紅利點數使用：會員優惠價(小計金額＊95折)→使用點數折抵後滿500可再享免運優惠。(1點折抵1元;當次最高可抵100點)</li>
+                            <li>紅利點數獲得：滿100元即贈5點，下次購物可抵用。(小計金額＊95折後金額之計算(不含運費)。例：小計金額510元＊95折=485元，獲得20點。)</li>
+                        </ol>
+
+                    </div>
+                </div>
+                <!--                     　　
+MEMBER_SEC;
+
+if(userLogged())
+{
+	echo $memberSec;
+}
+else
+{
+	echo $nonMemberSec;
+}
+?>
+-->
+
+                <!-- 12u baseline -->
+
+
+
+
+                <div class="12u">
+                    <div class="row no-collapse">
+                        <div class="6u">
+                            <a href="NanoSoapAll.php" onClick="cartNext(event,'../index.php#products','false')">
+                                <div class="4u button2">繼續購物</div>
+                            </a>
+                        </div>
+
+
+                        <!--
+
+                            <?php
+						   
+						   if($_SESSION['total_count'] > 0)
+						   {
+$nextSec=<<<NEXT_SEC
+
+-->
+
+                        <div class="6u">
+                            <a href="#" onClick="cartNext(event,'Cart_step2.php','true')">
+                                <div class=" 4u button2">立即結帳</div>
+                            </a>
+                        </div>
+
+                        <!--							   
+NEXT_SEC;
+							   
+							   echo $nextSec;
+						   }
+						   ?>
+-->
+
+                    </div>
+                </div>
+                <!--/div-->
+            </div>
+        </article>
+    </div>
+
+    <!--
+        <?
+		
+		include_once("part_Notice.php");
+		include_once("part_Footer.php");
+		
+		echo $noticeSec;
+		echo $footerSec;
+		
+		?>
+-->
+</body>
+
+</html>

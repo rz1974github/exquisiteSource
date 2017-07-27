@@ -898,10 +898,7 @@ ol.default li {
     font-size: 0.78em;
 }
 
-.wrapper.style5 #labeling span {
-    font-size: 0.78em;
-    color: #333;
-}
+
 
 .wrapper.style5 #labeling ul {
     margin-bottom: 0.5em;
@@ -1087,13 +1084,7 @@ ol.default li {
     font-size: 100%;
 }
 
-#step {
-    margin-bottom: 10px;
-    padding-right: 2em;
-    padding-left: 2em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
+
 
 #step dl {
     margin-right: auto;
@@ -1149,8 +1140,8 @@ ol.default li {
     padding: 2px 5px 2px 5px;
     color: white;
     border-radius: 8px;
-    font-size: 10%;
-    line-height: 0.75em;
+    font-size: 0.65em;
+    line-height: 1em;
     width: auto;
 }
 
@@ -1540,7 +1531,7 @@ ol.default li {
     color: #999;
 }
 
-.fr49 li {
+.item li {
     display: inline-block;
 }
 
@@ -2136,13 +2127,14 @@ ol.default li {
     background-repeat: no-repeat;
     background-position: left bottom;
     text-align: left;
+    display: block;
 }
 
 .cartpad {
     font-size: 1.1em;
     text-align: left;
     margin-left: 2%;
-    color: #FFF;
+    color: #ffffff;
 }
 
 .cartpad02 {
@@ -2174,6 +2166,7 @@ ol.default li {
 .subtotallist {
     border: 1px solid #CCC;
     margin-bottom: 1em;
+    text-align: right;
 }
 
 .test {
@@ -2253,7 +2246,7 @@ ol.default li {
     border-radius: 7px;
     font-size: 15%;
     line-height: 1em;
-    width: auto;
+    /*width: auto;*/
 }
 
 #productImage h4 {
@@ -2425,4 +2418,107 @@ ol.default li {
     border-radius: 5px;
     border: 1px solid #b2f2eb;
     text-align: center;
+}
+
+.fr205 {
+    margin-bottom: 0;
+}
+
+.fr205 li:first-child {
+    border-top: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px 0 10px 0;
+    /*margin-bottom: 0;*/
+}
+
+.fr205 li:last-child {
+    border-bottom: 1px solid #ccc;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.fr205 li {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px 0 10px 0;
+}
+
+
+
+.fr205 table {
+    margin-bottom: 0;
+}
+
+.fr205 td {
+    vertical-align: middle;
+}
+
+.fr206 {
+    margin-bottom: 5px;
+}
+
+.fr206 tr {
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.fr206 td:first-child {
+    border-left: 1px solid #d4d4d4;
+}
+
+.fr206 td {
+    background-color: #e4e4e4;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-right: 1px solid #d4d4d4;
+}
+
+.oderStep li {
+    display: inline-block;
+}
+
+.Step-Select-image {
+    display: block;
+    padding: 5px 10px 5px 10px;
+    margin: 0 2px 0 2px;
+    background-color: #6c6c6b;
+    color: white;
+    border: 3px solid #696969;
+    border-radius: 3px;
+}
+
+.Step-Not-choose {
+    display: block;
+    padding: 5px 10px 5px 10px;
+    margin: 0 2px 0 2px;
+    border: 2px solid rgba(105, 105, 105, 0.4);
+    border-radius: 3px;
+    color: rgba(87, 87, 87, 0.5);
+}
+
+.Step-int {
+    width: 15px;
+    display: block;
+    height: 8px;
+    border: none;
+    border-top: 2px solid #9b9a9a;
+}
+
+.baseFooter {
+    margin-top: 3em;
+    display: block;
+    background-color: #d4d4d4;
+}
+
+.fr207 {
+    margin-top: 5px;
+}
+
+.fr207 td {
+    background-color: #e4e4e4;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    /*border-right: 1px solid #d4d4d4;*/
 }

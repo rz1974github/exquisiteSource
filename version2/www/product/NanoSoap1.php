@@ -344,8 +344,8 @@
                             <h4>奈米矽皂</h4>
                         </li>
                     </ul>
-                    <p>首創超簡單深層清潔大公開，運用最新專利技術，以輕洗顏的方式，用敷的就深層清潔，即能重現肌膚會呼吸的柔細與光澤。
-                        <font style="color:brown;font-size:1.1em;font-weight: 600">熱情推薦!</font>
+                    <p style="color:#282828">首創超簡單深層清潔大公開，運用最新專利技術，以輕洗顏的方式，用敷的就深層清潔，即能重現肌膚會呼吸的柔細與光澤。
+                        <font style="color:brown;font-size:1.1em;font-weight:400">熱情推薦!</font>
                     </p>
                     <div class="row">
                         <div class="10u fr42">

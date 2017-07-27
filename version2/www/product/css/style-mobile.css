@@ -684,7 +684,7 @@ a .butbg {
 }
 
 .wrapper.style5 .item h3 {
-    font-size: 100%;
+    font-size: 106%;
     font-weight: 200;
     color: #333;
 }
@@ -697,10 +697,10 @@ a .butbg {
 
 .wrapper.style5 .item #best {
     background-color: #225f22;
-    padding: 2px 5px 2px 5px;
+    padding: 3px 6px 3px 6px;
     color: white;
-    border-radius: 6px;
-    font-size: 20%;
+    border-radius: 8px;
+    font-size: 0.85em;
     line-height: 1.1em;
     width: auto;
 }
@@ -726,10 +726,11 @@ a .butbg {
 .wrapper.style5 .oder4price {
     padding-top: 15px;
     font-size: 0.78em;
-    color: #6D6D6D;
+    color: #6d6d6d;
     letter-spacing: -1px;
     line-height: 1.5em;
     text-align: left;
+    font-weight: 0;
 }
 
 
@@ -769,7 +770,7 @@ a .butbg {
     padding: 2px 5px 2px 5px;
     color: white;
     border-radius: 8px;
-    font-size: 10%;
+    font-size: 0.65em;
     line-height: 0.75em;
     width: auto;
 }
@@ -778,7 +779,7 @@ a .butbg {
     margin-bottom: 0;
 }
 
-] .wrapper.style5 #labeling tr {
+.wrapper.style5 #labeling tr {
     margin: 15px 0 5px 0;
 }
 
@@ -902,6 +903,7 @@ a:hover.select {
     padding: 0 3px 0 3px;
     line-height: 1.2;
     color: #ffffff;
+    /*text-shadow: 0px -1px #ffffff;*/
 }
 
 .lsbelSeriesW {
@@ -911,4 +913,9 @@ a:hover.select {
     border: 1px solid #b2f2eb;
     text-align: center;
     text-shadow: 0 -1px #ffffff;
+}
+
+#labeling td:first-child {
+    margin: 0px 5px 0px 5px;
+    width: 15%;
 }
