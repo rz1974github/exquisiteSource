@@ -123,6 +123,8 @@
 				oForm.submit();
 			}
 		</script>
+
+        		
 		<?php
 
 		include_once("../global.php");
@@ -133,16 +135,21 @@
 		include_once("member_common.php");
 		
 		include("../common/sharedCode.php");
-		?>        
-	</head>
-	<body onload="parameterChanged()">
+		?> 
+
+</head>
+
+<body onload="parameterChanged()">
 
 		<!-- Nav -->
 			<nav id="nav">
                	<ul class="container">
                     <li><a href="../index.php">EXQUISITE</a></li>
                     
-					<li><a href="#">我的購物車<?php echo ($_SESSION['total_count']>0) ?  "(".$_SESSION['total_count'].")" : ""; ?></a></li>
+					<li><a href="#">我的購物車
+					<?php echo ($_SESSION['total_count']>0) ?  "(".$_SESSION['total_count'].")" : ""; ?>
+					</a>
+					</li>
 					<?php
 					
 					add_member_option("","Cart.php");
@@ -186,14 +193,9 @@
 					}
 $setHeader=<<<SET_HEADER
 														
-													 <!--div class="row"-->
 														<div class='12u'>
 														   <div class='12u fr42'>{$setName}</div>
-															<!--div class='row 0% no-collapse'>
-															   <div class='10u fr42 pjtcolor02'>　</div>
-															</div--><!-- row -->
 														</div><!-- 12u -->
-												    <!--/div-->
 													
 												     														
 
@@ -219,7 +221,6 @@ SET_HEADER;
 						$setTotal+=$productPrice[$setItem]*$count;
 $itemDetail=<<<ITEM_DETAIL
 														
-													<!--div class='row'-->
 													   <div class='12u'>
 													      <div class='row 0% no-collapse'>
 													         <div class='2u fr42'>　</div>
@@ -231,7 +232,6 @@ $itemDetail=<<<ITEM_DETAIL
 															   </div>
 															</div><!-- row -->
 														</div><!-- 12u -->
-													 <!--/div-->
 
 ITEM_DETAIL;
 						if(($counter%2==0) || ($counter==$countInSet))
@@ -574,7 +574,7 @@ NON_SEC;
 $memberSec=<<<MEMBER_SEC
                      
                        　<div class="row fr42">
-                        　  <div class"12u">
+                        　  <div class="12u">
                               <ul>
                                  <li><h8>會員折扣與紅利點數計算說明：</h8></li>
                                  <li>1.加入會員首筆訂單起即享售價＊95折優惠，特殊活動則另依公告執行。</li>

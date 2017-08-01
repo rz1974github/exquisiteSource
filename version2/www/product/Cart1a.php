@@ -22,7 +22,7 @@
 		</noscript>
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-    <!--       
+     
         <script type="text/javascript">
 			var parameterChanged=function()
 			{
@@ -124,8 +124,8 @@
 				oForm.submit();
 			}
 		</script>
--->
-    <!--    		
+
+       		
 		<?php
 
 		include_once("../global.php");
@@ -137,7 +137,7 @@
 		
 		include("../common/sharedCode.php");
 		?> 
--->
+
 </head>
 
 <body onload="parameterChanged()">
@@ -148,15 +148,15 @@
             <li><a href="../index.php">EXQUISITE</a></li>
 
             <li><a href="#">我的購物車
-<!--            
+         
 					<?php echo ($_SESSION['total_count']>0) ?  "(".$_SESSION['total_count'].")" : ""; ?>
--->					
+				
 					</a>
             </li>
-            <!--            
+          
             <?php
             add_member_option("","Cart.php"); ?>
--->
+
         </ul>
 
     </nav>
@@ -203,30 +203,18 @@
                             <td style="width:10%">確認</td>
                         </tr>
                     </table>
-                    <!--                      
-        <?php
-			$merchantTotal=0;
-			$setIndex=0;
-			
-			function iterateSet($detailName)
-			{
-				global $productName,$productPrice;
-				$setCount=count($_SESSION[$detailName]);
-				for($b=0;$b<$setCount;$b++)
-				{
-					$count = count($_SESSION[$detailName][$b]);
-					$c=$b+1;
-					if($setCount>1)
-					{
-						$setName="第{$c}組";
-					}
-					else
-					{
-						$setName="內容";
-					}
-$setHeader=<<<SET_HEADER
--->
                     <ul class="fr205">
+            
+                    
+<?php
+	$merchantTotal=0;
+	$setIndex=0;
+				function iterateSet($detailName)
+				{
+				}//iterateSet			
+            
+$setHeader=<<<SET_HEADER
+
                         <li>
                             <table>
                                 <tr>
@@ -236,30 +224,7 @@ $setHeader=<<<SET_HEADER
                                     <td style="width:20%">
                                         <!--{$setName}-->第一組<br>【植萃賦活】精選4入組
                                     </td>
-                                    <!--
-SET_HEADER;
 
-					echo 
-					$setHeader;
-					$setTotal=0;
-					$countInSet=count($_SESSION[$detailName][$b]);
-					$counter=1;
-					$oddItem="";
-					$evenItem="";
-					foreach($_SESSION[$detailName][$b] as $setItem=>$count)
-					{
-						$currentItem=$productName[$setItem]." x ".$count;
-						if($counter%2==1) 
-						{
-							$oddItem=$currentItem;
-						}
-						else
-						{
-							$evenItem=$currentItem;
-						}
-						$setTotal+=$productPrice[$setItem]*$count;
-$itemDetail=<<<ITEM_DETAIL
--->
                                     <td style="width:20%">奈米矽皂-梔子花
                                         <!--{$oddItem}--><br>奈米矽皂-玫瑰
                                         <!--{$evenItem}--><br>膠原矽皂
@@ -288,36 +253,13 @@ $itemDetail=<<<ITEM_DETAIL
 
                             </table>
                         </li>
+SET_HEADER;
 
-                        <!--
-ITEM_DETAIL;
-						if(($counter%2==0) || ($counter==$countInSet))
-						{
-							echo $itemDetail;
-							$oddItem="";
-							$evenItem="";
-						}
-						$counter++;
-					}//for a
-					$smallPrice+=$setTotal;
-				}//for b
-				return $smallPrice;
-			}
-			
-			//列出所有商品
-			foreach($productList as $item)
-			{
-				if(!isset($_SESSION[$item])) 	$_SESSION[$item]=0;			
-				$thisCount=$_SESSION[$item];
-				$price=$productPrice[$item];
-				$category=$productCategory[$item];
-				if($thisCount>0)
-				{
-					$smallPrice=$price * $thisCount;
-					$merchantTotal+=$smallPrice;
-					//前
-					echo "
--->
+	echo $setHeader;
+	echo $setHeader;
+
+$productLine=<<<PRODUCT_LINE
+
                         <!-- Unit -->
                         <li>
                             <table>
@@ -335,26 +277,6 @@ ITEM_DETAIL;
                                         <!--{$productName[$item]}-->100g
                                     </td>
 
-                                    <!--														
-														";
--->
-                                    <!--														
-
-					//禮盒組程式
-					if($item=="set_tender")
-					{	
-						$smallPrice=iterateSet('set_tender_detail');
-						$merchantTotal+=$smallPrice;
-					}//if gift
-					if($item=="set_candy")
-					{	
-						$smallPrice=iterateSet('set_candy_detail');
-						$merchantTotal+=$smallPrice;
-					}//if gift
-														
-					//後
-					echo"
--->
                                     <td style="width:10%">
                                         <!--{$thisCount}-->1
                                     </td>
@@ -370,73 +292,12 @@ ITEM_DETAIL;
                                 </tr>
                             </table>
                         </li>
+PRODUCT_LINE;
 
-                        <!--
-                                   ";
-				}//if
-			}//foreach
--->
-                        <!--
-                //1.商品總計 
-                $_SESSION['merchantTotal']=$merchantTotal; 
-                //本次新增點數 
-                $_SESSION['discount_merchant'] = round($_SESSION['merchantTotal']*$_SESSION['order_discount']); 
-                $_SESSION['newPoints']=floor($_SESSION['discount_merchant']*0.01)*5;
--->
-                        <!--                                
-                //2.折扣 
-                $pointsToUseStr=""; if(userLogged()) 
-                { 
-                if(isDealer()) { 
-                $_SESSION['pointsToUse'] = 0; 
-                //可調整使用點數 
-                $maxPoints = min(min($_SESSION['member_points'],$_SESSION['merchantTotal']),$_SESSION['max_pointsToUse']); 
-                $pointsToUseStr = "<input type='number' name='pointsToUse' id='id_pointsToUse_input' min='0' max='{$maxPoints}' value='{$_SESSION[' pointsToUse ']}' onChange='parameterChanged()'>"; 
-                } 
-                else 
-                { 
-                //設定最高金額點數 
-                $_SESSION['pointsToUse'] = min(min($_SESSION['member_points'],$_SESSION['discount_merchant']),$_SESSION['max_pointsToUse']); 
-                $pointsToUseStr = "<span id='id_pointsToUse'>{$_SESSION['pointsToUse']}</span>"; 
-                }
-                //else 
-                } 
-                $_SESSION['discount_merchant']-=$_SESSION['pointsToUse']; 
-                if(!isset($_SESSION['total_count'])) $_SESSION['total_count']=0; 
-                if($_SESSION['total_count']==0) 
-                { 
-                echo "
-                       -->
-                        <li>
-                            <table>
-                                <tr>
-                                    <td style="width:25%"><img style="width:60%" src='images/pic000-1.png'></td>
-                                    <td style="width:25%;color:#f00;">沒有任何商品!</td>
-                                    <td style="width:20%"></td>
-                                    <td style="width:10%"></td>
-                                    <td style="width:10%"></td>
-                                    <td style="width:10%"></td>
-                                </tr>
-                            </table>
-                        </li>
-                        <!--
-                        ";
-                 }
-                 //else
--->
+	echo $productLine;
+	echo $productLine;						
 
-
-                        <!--                                  
-                 //3.運費 
-                 $_SESSION['shippingFee']=$_SESSION['basicShipping']; 
-                 $feeColor="#F00"; 
-                 if($_SESSION['discount_merchant']>=$_SESSION['noFeeAmount']) 
-                 { 
-                 $_SESSION['shippingFee']=0; 
-                 }
-                 //if 
-                 ?>
--->
+?>
                         <li>
                             <table class="fr25 total">
                                 <tr>
@@ -468,29 +329,6 @@ ITEM_DETAIL;
                 <div class="12u">
                     <h3>訂單確認</h3>
 
-                    <!--                      
-        <?php
-			$merchantTotal=0;
-			$setIndex=0;
-			
-			function iterateSet($detailName)
-			{
-				global $productName,$productPrice;
-				$setCount=count($_SESSION[$detailName]);
-				for($b=0;$b<$setCount;$b++)
-				{
-					$count = count($_SESSION[$detailName][$b]);
-					$c=$b+1;
-					if($setCount>1)
-					{
-						$setName="第{$c}組";
-					}
-					else
-					{
-						$setName="內容";
-					}
-$setHeader=<<<SET_HEADER
--->
                     <ul class="fr205">
                         <li>
                             <table>
@@ -523,62 +361,9 @@ $setHeader=<<<SET_HEADER
 
                             </table>
 
-                            <!--
-SET_HEADER;
-
-					echo 
-					$setHeader;
-					$setTotal=0;
-					$countInSet=count($_SESSION[$detailName][$b]);
-					$counter=1;
-					$oddItem="";
-					$evenItem="";
-					foreach($_SESSION[$detailName][$b] as $setItem=>$count)
-					{
-						$currentItem=$productName[$setItem]." x ".$count;
-						if($counter%2==1) 
-						{
-							$oddItem=$currentItem;
-						}
-						else
-						{
-							$evenItem=$currentItem;
-						}
-						$setTotal+=$productPrice[$setItem]*$count;
-$itemDetail=<<<ITEM_DETAIL
--->
 
                         </li>
 
-                        <!--
-ITEM_DETAIL;
-						if(($counter%2==0) || ($counter==$countInSet))
-						{
-							echo $itemDetail;
-							$oddItem="";
-							$evenItem="";
-						}
-						$counter++;
-					}//for a
-					$smallPrice+=$setTotal;
-				}//for b
-				return $smallPrice;
-			}
-			
-			//列出所有商品
-			foreach($productList as $item)
-			{
-				if(!isset($_SESSION[$item])) 	$_SESSION[$item]=0;			
-				$thisCount=$_SESSION[$item];
-				$price=$productPrice[$item];
-				$category=$productCategory[$item];
-				if($thisCount>0)
-				{
-					$smallPrice=$price * $thisCount;
-					$merchantTotal+=$smallPrice;
-					//前
-					echo "
--->
                         <!-- Unit -->
                         <li>
                             <table>
@@ -610,64 +395,9 @@ ITEM_DETAIL;
                                 </tr>
 
                             </table>
-                            <!--														
-														";
--->
-                            <!--														
 
-					//禮盒組程式
-					if($item=="set_tender")
-					{	
-						$smallPrice=iterateSet('set_tender_detail');
-						$merchantTotal+=$smallPrice;
-					}//if gift
-					if($item=="set_candy")
-					{	
-						$smallPrice=iterateSet('set_candy_detail');
-						$merchantTotal+=$smallPrice;
-					}//if gift
-														
-					//後
-					echo"
--->
                         </li>
 
-                        <!--
-                                   ";
-				}//if
-			}//foreach
--->
-                        <!--
-                //1.商品總計 
-                $_SESSION['merchantTotal']=$merchantTotal; 
-                //本次新增點數 
-                $_SESSION['discount_merchant'] = round($_SESSION['merchantTotal']*$_SESSION['order_discount']); 
-                $_SESSION['newPoints']=floor($_SESSION['discount_merchant']*0.01)*5;
--->
-                        <!--                                
-                //2.折扣 
-                $pointsToUseStr=""; if(userLogged()) 
-                { 
-                if(isDealer()) { 
-                $_SESSION['pointsToUse'] = 0; 
-                //可調整使用點數 
-                $maxPoints = min(min($_SESSION['member_points'],$_SESSION['merchantTotal']),$_SESSION['max_pointsToUse']); 
-                $pointsToUseStr = "<input type='number' name='pointsToUse' id='id_pointsToUse_input' min='0' max='{$maxPoints}' value='{$_SESSION[' pointsToUse ']}' onChange='parameterChanged()'>"; 
-                } 
-                else 
-                { 
-                //設定最高金額點數 
-                $_SESSION['pointsToUse'] = min(min($_SESSION['member_points'],$_SESSION['discount_merchant']),$_SESSION['max_pointsToUse']); 
-                $pointsToUseStr = "<span id='id_pointsToUse'>{$_SESSION['pointsToUse']}</span>"; 
-                }
-                //else 
-                } 
-                $_SESSION['discount_merchant']-=$_SESSION['pointsToUse']; 
-                if(!isset($_SESSION['total_count'])) $_SESSION['total_count']=0; 
-                if($_SESSION['total_count']==0) 
-                { 
-                echo "
-                       -->
                         <li>
                             <table>
                                 <tr>
@@ -678,24 +408,7 @@ ITEM_DETAIL;
                             </table>
 
                         </li>
-                        <!--
-                        ";
-                 }
-                 //else
--->
 
-
-                        <!--                                  
-                 //3.運費 
-                 $_SESSION['shippingFee']=$_SESSION['basicShipping']; 
-                 $feeColor="#F00"; 
-                 if($_SESSION['discount_merchant']>=$_SESSION['noFeeAmount']) 
-                 { 
-                 $_SESSION['shippingFee']=0; 
-                 }
-                 //if 
-                 ?>
--->
                         <li>
                             <table>
                                 <tr>共
@@ -726,137 +439,10 @@ ITEM_DETAIL;
             </div>
             <div class="row">
                 <div class="12u baseline01">
-                    <!--
-                            <?php
-			<---      暫無使用     --->
-                    <!--
-    
-    			
-    									
-		//經銷商可調折扣
-		/*
-		$discountString="";		 
-		if(isset($_SESSION['member_discount']) && ($_SESSION['member_discount']<$_SESSION['member_def_discount']))
-		{					
-			$discountString="<select id='id_order_discount' name='order_discount' onChange='parameterChanged()'>";
-			for($i=$_SESSION['member_def_discount']*100;$i>=($_SESSION['member_discount']*100);$i--)
-			{
-				$value=$i*0.01;
-				$valueWord=$i*0.1;
-				$preselected = "";
-				if($i==($_SESSION['order_discount']*100))
-				{
-					$preselected="selected";
-				}						
-				$discountString.="<option value='{$value}' {$preselected}>{$valueWord}</option>";
-			}                               
-			$discountString.="</select>折";
-		}
-		else
-		*/
--->
-                    <!--		
-		if($_SESSION['order_discount'] < 0.99)
-		{
-			$jer = $_SESSION['order_discount'] * 10;
-			$discountString="{$jer}折";
-		}
-			
-$off_sec=<<<OFF_SEC
-
-                                    <tr>
-
-                                        <td>會員折扣Off</td>
-                                        <td>{$discountString}</td>
-                                    </tr>
-                                    								
-OFF_SEC;
-		
-		//點數
-$point_sec=<<<POINT_SESSION
-
-                                    <tr>
-
-                                        <td>紅利點數Dividend</td>
-                                        <td>{$pointsToUseStr}點/尚有<span id="id_remain">{$_SESSION['member_points']}</span>點</td>
-                                    </tr>
-                            POINT_SESSION; if(userLogged()) { echo $off_sec; echo $point_sec; } $dis_sec=
-                            <<<discount_session 
-                                    <tr>
-                                        <td>折扣後金額Discounted</td>
-                                        <td id="id_discount_merchant">NT$ {$_SESSION['discount_merchant']}元</td>
-                                    </tr>
-                            discount_session; if($_SESSION['order_discount']
-                            <0.99) { echo $dis_sec; } ?>
-                                    <tr>
-                                        <td>運費Shipping</td>
-                                        <td id="id_shippingFee">NT$
-                                            <?php echo $_SESSION['shippingFee'] ?>元</td>
-                                    </tr>
-                            <?php
-		//本次新增點數
-$newPointsSec=<<<NEWPOINT_SEC
-                                    <tr>
-
-                                        <td>獲得點數Gain</td>
-                                        <td id="id_shippingFee">{$_SESSION['newPoints']}點</td>
-                                    </tr>
-NEWPOINT_SEC;
-		
-		if(userLogged())
-		{
-			echo $newPointsSec;
-		}
-
-		//總金額
-		$_SESSION['total_money']=$_SESSION['discount_merchant']+$_SESSION['shippingFee'];
-		
-		$pointString="var js_pointsToUse=".(isset($_SESSION['pointsToUse']) ? "{$_SESSION['pointsToUse']};" : "0;");
-		$memberPointString="";
-		if(isset($_SESSION['member_points']))
-		{
-			$memberPointString="var js_member_points={$_SESSION['member_points']};";
-		}
-		
-		$userLoggedBool = userLogged();
-		$isDealerBool = isDealer();
-		
-		echo "
-
-                                <tfoot>
-                                    <tr>
-                                        <td id='id_total' class='subtotallist money01' colspan='2'>NT$ {$_SESSION['total_money']}</td>
-                                    </tr>
-                                </tfoot>
-                                </table>
-                                <!--			 
-			<script type='text/javascript'>
-			var js_merchantTotal={$merchantTotal};
-			var js_orderDiscount={$_SESSION['order_discount']};	
-			var js_shippingFee={$_SESSION['shippingFee']};
-			var js_basicShipping={$_SESSION['basicShipping']};
-			var js_noFeeAmount={$_SESSION['noFeeAmount']};
-			var_jsMaxPointsToUse={$_SESSION['max_pointsToUse']};
-			var js_isDealer='{$isDealerBool}';
-			var js_userLogged='{$userLoggedBool}';						
-			{$pointString}
-			{$memberPointString}
-			</script>
-		";
-?>
-                        <?php
-
-$nonMemberSec=<<<NON_SEC
--->
 
                     <h3>提醒您加入會員即刻享有
                         <font style="color:brown">95折</font>優惠，另加紅利點數回饋下次購物即享折抵。</h3>
-                    <!--/div>
-                    <!--                                    
-NON_SEC;
 
-$memberSec=<<<MEMBER_SEC
--->
                     <div class="row fr42 memberList">
                         <ol>會員折扣與紅利點數計算說明：
 
@@ -868,59 +454,27 @@ $memberSec=<<<MEMBER_SEC
                             <li>紅利點數獲得：(小計金額＊95折後金額之計算(不包含運費)滿100元即贈5點，下次購物可抵用。。<br>例：小計金額510元＊95折=485元，獲得20點。</li>
                         </ol>
                     </div>
-                    <!--                     　　
-MEMBER_SEC;
 
-if(userLogged())
-{
-	echo $memberSec;
-}
-else
-{
-	echo $nonMemberSec;
-}
-?>
--->
                 </div>
                 <!-- 12u baseline -->
             </div>
             <div class="row not-mobile">
                 <div class="12u">
                     <input class="2u button2" type="button" value="繼續購物" onclick="cartNext(event,'../index.php#products','false')" />
-                    <!--
-                            <?php
-						   if($_SESSION['total_count'] > 0)
-						   {
-$nextSec=<<<NEXT_SEC
--->
+
                     <input class="2u button2" type="button" value="前往結帳" onClick="cartNext(event,'Cart_step2.php','true')" />
                 </div>
-                <!--							   
-NEXT_SEC;
-							   echo $nextSec;
-						   }
-						   ?>
--->
+
             </div>
             <div class="row only-mobile">
                 <div class="12u">
                     <input class="2u button2" type="button" value="繼續購物" onclick="cartNext(event,'../index.php#products','false')" />
                 </div>
                 <div class="12u">
-                    <!--
-                            <?php
-						   if($_SESSION['total_count'] > 0)
-						   {
-$nextSec=<<<NEXT_SEC
--->
+
                     <input class="2u button2" type="button" value="前往結帳" onClick="cartNext(event,'Cart_step2.php','true')" />
                 </div>
-                <!--							   
-NEXT_SEC;
-							   echo $nextSec;
-						   }
-						   ?>
--->
+
             </div>
 
         </article>

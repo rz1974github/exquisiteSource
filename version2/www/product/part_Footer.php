@@ -45,6 +45,7 @@ $footerSec=<<<FOOTER_SEC
                 <ul id="copyright">
                     <li>COPYRIGHT &copy; 2014 All rights reserved.</li>
                     <li>Design:Exquisite.tw Cooperation.</li>
+					<li><a href='Cart1a.php'>工程測試</a></li>
                 </ul>
             </footer>
 		</article>

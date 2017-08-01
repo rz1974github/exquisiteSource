@@ -919,3 +919,7 @@ a:hover.select {
     margin: 0px 5px 0px 5px;
     width: 15%;
 }
+
+.memberList {
+    font-size: 0.9em;
+}

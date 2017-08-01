@@ -7,7 +7,13 @@
 <html>
 
 <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    
     <?php 
+	ini_set('default_charset','utf-8');
 	
 	session_start(); 
 	
@@ -41,10 +47,6 @@
 	
 	?>
     <title>EXQUISITE 任選組合</title>
-
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
     <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.scrolly.min.js"></script>

@@ -898,8 +898,6 @@ ol.default li {
     font-size: 0.78em;
 }
 
-
-
 .wrapper.style5 #labeling ul {
     margin-bottom: 0.5em;
 }
@@ -1083,8 +1081,6 @@ ol.default li {
 #project {
     font-size: 100%;
 }
-
-
 
 #step dl {
     margin-right: auto;
@@ -2164,9 +2160,11 @@ ol.default li {
 }
 
 .subtotallist {
-    border: 1px solid #CCC;
-    margin-bottom: 1em;
+    margin-top: 1em;
+    border-top: 1px dotted #ccc;
+    padding-top: 1em;
     text-align: right;
+    padding-right: 20%;
 }
 
 .test {
@@ -2220,10 +2218,7 @@ ol.default li {
 }
 
 .choosing {
-    padding-top: 3em;
-    padding-right: 5em;
-    padding-bottom: 3em;
-    padding-left: 5em;
+    padding: 3em 0 2em 0;
 }
 
 .baseline03 {
@@ -2436,6 +2431,7 @@ ol.default li {
     border-bottom: 1px solid #ccc;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    padding: 2px;
 }
 
 .fr205 li {
@@ -2444,8 +2440,6 @@ ol.default li {
     border-top: 1px solid #ccc;
     padding: 10px 0 10px 0;
 }
-
-
 
 .fr205 table {
     margin-bottom: 0;
@@ -2521,4 +2515,23 @@ ol.default li {
     padding-top: 3px;
     padding-bottom: 3px;
     /*border-right: 1px solid #d4d4d4;*/
+}
+
+.total {
+    background-color: #e4e4e4;
+    margin: 3px 0 3px 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.total td {
+    padding-right: 15px;
+}
+
+.memberList {
+    padding-left: 5%;
+}
+
+.memberList ol {
+    margin-left: 10px;
 }
