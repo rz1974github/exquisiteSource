@@ -46,6 +46,7 @@ $footerSec=<<<FOOTER_SEC
                     <li>COPYRIGHT &copy; 2014 All rights reserved.</li>
                     <li>Design:Exquisite.tw Cooperation.</li>
 					<li><a href='Cart1a.php'>工程測試</a></li>
+					<li>使用點數{$_SESSION['pointsToUse']}</li>
                 </ul>
             </footer>
 		</article>

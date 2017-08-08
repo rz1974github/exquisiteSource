@@ -241,7 +241,7 @@ ITEM_DETAIL;
 							$evenItem="";
 						}
 						$counter++;
-					}//for a
+					}//foreach
 					$smallPrice+=$setTotal;
 				}//for b
 				return $smallPrice;

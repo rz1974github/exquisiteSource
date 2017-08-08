@@ -103,84 +103,94 @@
 				add_member_option("","Cart_step2.php");
 
 				?>                    
-			</ul>
-		</nav>
-		<!-- Home -->
-		<div class="wrapper step02">
-			<article class="container 75%">
-				<div class="row 0% baseline01 fr311">
-					<div class="12u"><img class="12u" src="images/STEP2CC.png"></div>
-				</div><!-- row 0% -->
-				<div class="row">
-					<div class="12u">
-						<div class="choosing">Choosing a payment method<br>請先選擇付款方式再選擇取貨方式</div>
-					</div>
-				</div><!-- row -->
-				<div class="row 0%">
-					<div class="12u baseline01">
-						<div class="row no-collapse fr312">
-							<div class="4u 10u(3)">
-								<div class="row">
-									<div class="12u">                                        
-										<select name="order_type" form="Cart2Form" style="width: 100%">
+        </ul>
+    </nav>
+    <!-- Home -->
+    <div class="wrapper step02">
+        <article class="container 75%">
+            <div class="row not-mobile">
+                <div class="12u oderStep">
+                    <ul>
+                        <li>
+                            <div class="Step-Not-choose">STEP1 訂單確認</div>
+                        </li>
+                        <li>
+                            <div class="Step-int"></div>
+                        </li>
+                        <li>
+                            <div class="Step-Select-image">STEP2 付款方式</div>
+                        </li>
+                        <li>
+                            <div class="Step-int"></div>
+                        </li>
+                        <li>
+                            <div class="Step-Not-choose">STEP3 帳單資訊</div>
+                        </li>
+                        <li>
+                            <div class="Step-int"></div>
+                        </li>
+                        <li>
+                            <div class="Step-Not-choose">STEP4 結帳完成</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h3> 選擇付款方式<br>Choosing a payment method
+            </h3>
+            <P>請先依序選擇您欲付款的方式，再選擇取貨的地點。</P>
+            <!-- row -->
+            <div class="row 0%">
+                <div class="12u baseline01">
+                    <form id="Cart2Form" action="Cart_step2Submit.php" method="post">
+                        <div class="row no-collapse fr312">
+                            <div class="4u 12u(3)">
+                                <select class="12u(3)" name="order_type" form="Cart2Form">
 											<option value="0">--選擇付款方式--</option>
 											<option value="3">ATM付款</option><!-- value 是 easyShip要用 -->
 											<option value="1">貨到付款</option><!-- value 是 easyShip要用 -->
                                             <option value="10">信用卡線上刷卡</option>
-										</select>                                        
-									</div><!-- 12u -->
-								</div><!-- row -->
-							</div><!-- 4u -->
-							<div class="4u 10u(3)">
-								<div class="row">
-									<div class="12u">                                        
-										<select id="id_deliever" name="deliever" form="Cart2Form" style="width: 100%" onChange="delieverChanged()">
+										</select>
+                            </div>
+                            <div class="4u 12u(3)">
+                                <select class="12u(3)" id="id_deliever" name="deliever" form="Cart2Form" onChange="delieverChanged()">
 											<option value="0">--選擇取貨方式--</option>   
 											<option value="1">宅配</option>
 											<option value="3">超商店配(全家 萊爾富 OK)</option>
-										</select>                                           
-									</div>
-								</div><!-- row -->
-							</div><!-- 4u -->
-							<div class="4u 10u(3)">
-								<div class="row">
-									<div class="12u">                                        
-										<select id="id_delieverTime" name="delieverTime" form="Cart2Form" style="width: 100%" disabled>
+										</select>
+                            </div>
+                            <div class="4u 12u(3)">
+                                <select class="12u" id="id_delieverTime" name="delieverTime" form="Cart2Form" disabled>
 											<option value="0" selected>--指定送貨時段--</option>
 											<option value="1">不指定時間</option>
 											<option value="2">中午以前</option>
 											<option value="3">12~17時</option>
 											<option value="4">17~20時</option>
-										</select>                                        
-									</div><!-- 12u -->
-								</div><!-- row -->
-							</div><!-- 4u -->
-						</div><!-- row no-collapse-->
-					</div><!-- 12u -->
-				<!--/div--><!-- row 0% -->
-                <form id="Cart2Form" action="Cart_step2Submit.php" method="post">
-                	<input type="hidden" name="Submit2" value="true" />
-                </form>
+										</select>
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="Submit2" value="true" />
+                    </form>
+
                 </div>
-				<div class="row">
-					<div class="12u">
-						<div class="row no-collapse">
-							<div class="6u fr25">
-								<a href="Cart.php">                                   
-                                      <div class="button2">回購物車</div>
-                                </a>
-							</div><!-- 6u -->
-							<div class="6u fr42">
-								<a href="Cart_step3.php" onClick="submitStep2(event)">
-                                   <div class="button2">下一步></div>
-                                </a>
-							</div><!-- 6u -->
-						</div><!-- row -->
-					</div><!-- 12u -->
-				</div><!-- row -->
-			</article>
-		</div><!-- wrapper -->
-        <?
+            </div>
+            <div class="row not-mobile">
+                <div class="12u">
+                    <input class="2u button2" type="button" value="繼續購物" href="cart1.php" onclick="window.location.href='Cart.php'" />
+                    <input class="2u button2" type="button" value="下一步>" href="cart3.php" onClick="submitStep2(event)" />
+                </div>
+            </div>
+            <div class="row only-mobile">
+                <div class="12u">
+                    <input class="2u button2" type="button" value="繼續購物" href="cart1.php" onclick="window.location.href='Cart.php'" />
+                </div>
+                <div class="12u">
+                    <input class="2u button2" type="button" value="下一步>" href="cart3.php" onClick="submitStep2(event)" />
+                </div>
+            </div>
+        </article>
+    </div>
+    <?
 		
 		include_once("part_Notice.php");
 		include_once("part_Footer.php");
