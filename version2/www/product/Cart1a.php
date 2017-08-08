@@ -470,14 +470,14 @@ $calculateSeg=<<<CALCULATE_SEG
                                 </tr>
                             </table>
                         </li>
-                    </ul>
-                </div>
-            </div>
 
-            
 CALCULATE_SEG;
 
-		echo $calculateSeg;
+
+		if($_SESSION['total_count']>0)
+		{
+			echo $calculateSeg;
+		}
 
 		//總金額
 		$_SESSION['total_money']=$_SESSION['discount_merchant']+$_SESSION['shippingFee'];
@@ -493,6 +493,11 @@ CALCULATE_SEG;
 		$isDealerBool = isDealer();
 		
 		echo "
+						
+                    </ul>
+                </div>
+            </div>
+			
 			<script type='text/javascript'>
 			var js_merchantTotal={$merchantTotal};
 			var js_orderDiscount={$_SESSION['order_discount']};	
@@ -562,7 +567,7 @@ $mobileLine=<<<MOBILE_LINE
                                         <li>
                                             <table>
                                                 <tr>
-                                                    <td class="7u"><img class="10u" src="{$productPhoto[$item]}"></td>
+                                                    <td class="7u"><img class="10u" src="images/{$productPhoto[$item]}"></td>
                                                     <td class="5u">
                                                         【{$category}】</td>
                                                 </tr>
@@ -672,9 +677,12 @@ MOBILE_SUMMARY;
                             <div class="row">
                                 <div class="12u baseline01">
 
-                                    <h3>提醒您加入會員即刻享有
-                                        <font style="color:brown">95折</font>優惠，另加紅利點數回饋下次購物即享折抵。</h3>
-
+								<?php
+									if(!userLogged())
+									{
+                                    	echo "<h3>提醒您加入會員即刻享有<font style='color:brown'>95折</font>優惠，另加紅利點數回饋下次購物即享折抵。</h3>";
+									}
+								?>
                                     <div class="row fr42 memberList">
                                         <ol>會員折扣與紅利點數計算說明：
 
