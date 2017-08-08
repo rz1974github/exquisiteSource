@@ -177,14 +177,14 @@
                     </ul>
                 </div>
             </div>
+            <h3>訂單確認<br>Order Confirmation</h3>
+            <p></p>
             <div class="row not-mobile">
                 <div class="12u">
-                    <h3>訂單確認</h3>
                     <table class="fr206">
                         <tr>
                             <td style="width:40%">商品明細</td>
-                            <td style="width:20%">內容</td>
-                            <td style="width:10%">規格</td>
+                            <td style="width:30%">內容</td>
                             <td style="width:10%">數量</td>
                             <td style="width:10%">小計</td>
                             <td style="width:10%">確認</td>
@@ -193,7 +193,7 @@
                     <ul class="fr205">
 
 
-<?php
+                        <?php
 	$merchantTotal=0;
 	$setIndex=0;
 
@@ -261,10 +261,7 @@ $setSegment=<<<SET_SEGMENT
                                         {$setName}<br>【{$_SetCategory}】{$_SetProductName}
                                     </td>
 
-                                    <td style="width:20%">{$itemList}
-                                    </td>
-                                    <td style="width:10%">
-                                        <!--100g-->
+                                    <td style="width:30%">{$itemList}
                                     </td>
                                     <td style="width:10%">
                                         1<br>set
@@ -290,24 +287,23 @@ $mobileSet=<<<MOBILE_SET
                                         <li>
                                             <table>
                                                 <tr>
-                                                    <td colspan="2"><img class="12u" src="images/{$productPhoto[$_item]}"></td>
-                                                    <td style="" class="4u">
+                                                    <td class="7u"><img class="12u" src="images/{$productPhoto[$_item]}"></td>
+                                                    <td class="5u">
 													    {$setName}<br>【{$_SetCategory}】{$_SetProductName}
                                                         </td>
                                                 </tr>
                                                 <tr>
                                                     <td style="font-size:0.85em">{$itemList}
                                                     </td>
-                                                    <td><!--100g--></td>
                                                     <td>1<br>set</td>
                                                 </tr>
                                                 <tr style="background-color:#ccc;border-top:1px solid #bbb;border-bottom:1px solid #bbb">
-                                                    <td colspan="2">
+                                                    <td>
                                                         {$mobileStrikedStr}
                                                         {$mobileDiscStr}
                                                     </td>
 
-                                                    <td style="padding-right: 10px"><input class="6u button2" type="button" value="刪除" onClick="window.location.href='removeFromCart.php?product={$_item}'" /></td>
+                                                    <td style="padding-right: 10px"><input class="button2" type="button" value="刪除" onClick="window.location.href='removeFromCart.php?product={$_item}'" /></td>
                                                 </tr>
 
                                             </table>
@@ -376,13 +372,9 @@ $productLine=<<<PRODUCT_LINE
 								</td>
 								<td style="width:20%">【{$category}】                                        
 								</td>
-								<td style="width:20%" colspan="2">{$productName[$item]}
+								<td style="width:30%">{$productName[$item]}
 
 								</td>
-								<td style="width:10%">
-									<!--100g-->
-								</td>
-
 								<td style="width:10%">
 									{$thisCount}
 								</td>
@@ -437,10 +429,17 @@ PRODUCT_LINE;
 			
 			if($_SESSION['total_count']==0)
 			{
-				echo "<div class='row'>
-						<div class='3u 6u(2) 12u(3)'><img class='8u' src='images/pic000-1.png'></div>
-						<div class='4u 4u(2) 8u(3) fr03' style='color:#f00;'>沒有任何商品!</div>
-					  </div>";
+				echo "  <li>
+                            <table>
+                                <tr>
+                                    <td style='width:25%'><img style='width:60%' src='images/pic000-1.png'></td>
+                                    <td style='width:25%;color:#f00;'>沒有任何商品!</td>
+                                    <td style='width:30%'></td>
+                                    <td style='width:10%'></td>
+                                    <td style='width:10%'></td>
+                                </tr>
+                            </table>
+                        </li>";
 			}//else
 			
 			//3.運費
@@ -511,10 +510,9 @@ CALCULATE_SEG;
 
                             <div class="row only-mobile">
                                 <div class="12u">
-                                    <h3>訂單確認</h3>
                                     <ul class="fr205">
-                                    
-<?php
+
+                                        <?php
 			
 			//Mobile Only
 			$setIndex=0;
@@ -564,24 +562,21 @@ $mobileLine=<<<MOBILE_LINE
                                         <li>
                                             <table>
                                                 <tr>
-                                                    <td colspan="2"><a href='{$productLink[$item]}'><img class="12u" src="{$productPhoto[$item]}"></a></td>
-                                                    <td style="" class="4u">
+                                                    <td class="7u"><img class="10u" src="{$productPhoto[$item]}"></td>
+                                                    <td class="5u">
                                                         【{$category}】</td>
                                                 </tr>
                                                 <tr>
                                                     <td style="font-size:0.85em">{$productName[$item]}</td>
-                                                    <td><!--100g--></td>
                                                     <td>{$thisCount}</td>
                                                 </tr>
                                                 <tr style="background-color:#ccc;border-top:1px solid #bbb;border-bottom:1px solid #bbb">
-                                                    <td colspan="2">
+                                                    <td>
                                                         {$strikedStr}
                                                         {$smallPriceStr}
                                                     </td>
-
                                                     <td style="padding-right: 10px">
-
-                                                        <input class="6u button2" type="button" value="刪除" onClick="window.location.href='removeFromCart.php?product={$item}'" />
+                                                        <input class="button2" type="button" value="刪除" onClick="window.location.href='removeFromCart.php?product={$item}'" />
                                                     </td>
                                                 </tr>
                                             </table>
@@ -668,7 +663,7 @@ MOBILE_SUMMARY;
 			}//else
 
 ?>
-										
+
 
 
                                     </ul>
@@ -693,7 +688,6 @@ MOBILE_SUMMARY;
                                     </div>
 
                                 </div>
-                                <!-- 12u baseline -->
                             </div>
                             <div class="row not-mobile">
                                 <div class="12u">
@@ -705,11 +699,11 @@ MOBILE_SUMMARY;
                             </div>
                             <div class="row only-mobile">
                                 <div class="12u">
-                                    <input class="2u button2" type="button" value="繼續購物" onclick="cartNext(event,'../index.php#products','false')" />
+                                    <input class="button2" type="button" value="繼續購物" onclick="cartNext(event,'../index.php#products','false')" />
                                 </div>
                                 <div class="12u">
 
-                                    <input class="2u button2" type="button" value="前往結帳" onClick="cartNext(event,'Cart_step2.php','true')" />
+                                    <input class="button2" type="button" value="前往結帳" onClick="cartNext(event,'Cart_step2.php','true')" />
                                 </div>
 
                             </div>
