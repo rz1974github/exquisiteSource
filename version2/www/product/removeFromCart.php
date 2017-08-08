@@ -6,9 +6,26 @@
 							 
 	if(isset($_REQUEST['product']))
 	{
+		//要刪除的商品名稱
 		$product=$_REQUEST['product'];
-		if(!isset($_SESSION[$product])) 	$_SESSION[$product]=0;	
-		$_SESSION[$product]=0;
+		if(!isset($_SESSION[$product])) 	$_SESSION[$product]=0;
+		if(($product=='set_tender') || ($product=='set_candy'))
+		{
+			//數量減1
+			$_SESSION[$product]--;
+			
+			$detailName = $product."_detail";
+			
+			//禮盒組編號
+			$setIndex = $_REQUEST['setIndex'];
+			
+			//從陣列中去除
+			array_splice($_SESSION[$detailName],$setIndex,1);
+		}
+		else
+		{
+			$_SESSION[$product]=0;
+		}//else
 	}//if
 		
 	$total_count=0;

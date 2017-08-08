@@ -89,6 +89,7 @@ function purchaseType(&$order_type,&$deliever)
 								'十九',
 								'二十');
 		
+		//商品種類列舉
 		$productList = array('gardenia100','gardenia25',
 							 'rose100','rose25',
 							 'lavender100','lavender25',

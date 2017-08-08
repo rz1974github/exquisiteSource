@@ -202,10 +202,10 @@
 				global $productName,$productPrice,$productPhoto,$chineseNumber;
 				$setCount=count($_SESSION[$_detailName]);
 				$smallPrice=0;
-				for($b=0;$b<$setCount;$b++)
+				for($setIndex=0;$setIndex<$setCount;$setIndex++)
 				{
-					$count = count($_SESSION[$_detailName][$b]);
-					$c=$chineseNumber[$b+1];
+					$count = count($_SESSION[$_detailName][$setIndex]);
+					$c=$chineseNumber[$setIndex+1];
 					if($setCount>1)
 					{
 						$setName="第{$c}組";
@@ -215,11 +215,11 @@
 						$setName="";
 					}
 					$setTotal=0;
-					$countInSet=count($_SESSION[$_detailName][$b]);
+					$countInSet=count($_SESSION[$_detailName][$setIndex]);
 					$counter=1;
 
 					$itemList="";
-					foreach($_SESSION[$_detailName][$b] as $setItem=>$count)
+					foreach($_SESSION[$_detailName][$setIndex] as $setItem=>$count)
 					{
 						$currentItem=$productName[$setItem]." x ".$count;
 						if($counter>1)
@@ -273,7 +273,7 @@ $setSegment=<<<SET_SEGMENT
 
                                     </td>
                                     <td style="width:10%">
-                                        <a href="removeFromCart.php?product={$_item}" class="icon02">
+                                        <a href="removeFromCart.php?product={$_item}&setIndex={$setIndex}" class="icon02">
                                             <img class="4u" src="images/trash_can.png"></a>
                                     </td>
                                 </tr>
@@ -303,7 +303,7 @@ $mobileSet=<<<MOBILE_SET
                                                         {$mobileDiscStr}
                                                     </td>
 
-                                                    <td style="padding-right: 10px"><input class="button2" type="button" value="刪除" onClick="window.location.href='removeFromCart.php?product={$_item}'" /></td>
+                                                    <td style="padding-right: 10px"><input class="button2" type="button" value="刪除" onClick="window.location.href='removeFromCart.php?product={$_item}&setIndex={$setIndex}'" /></td>
                                                 </tr>
 
                                             </table>
